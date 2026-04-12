@@ -1402,6 +1402,7 @@ textarea {
     align-items: center;
     border-radius: 28px;
     padding: 0.95rem 1rem;
+    overflow: visible;
   }
 
   .nav-toggle {
