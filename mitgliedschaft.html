@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jugend | SV Zweckel 23 e. V.</title>
+    <title>Mitgliedschaft | SV Zweckel 23 e. V.</title>
     <meta
       name="description"
-      content="Jugendportal des SV Zweckel 23 e. V. mit Ansprechpartnern, Teamstruktur, Probetraining und offiziellen FUSSBALL.DE-Daten."
+      content="Mitgliedschaft beim SV Zweckel 23 e. V. mit Beitrittslogik, Nutzen, Dokumentenstruktur und Anfragewegen."
     />
-    <link rel="preload" href="assets/blog_bild_1.webp" as="image" />
+    <link rel="preload" href="assets/header_bild_1.webp" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -23,86 +23,66 @@
             </div>
           </a>
         </div>
-
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           Menue
         </button>
-
         <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
           <a href="news.html">Aktuelles</a>
           <a href="mannschaften.html">Mannschaften</a>
-          <a href="jugend.html" class="is-current">Jugend</a>
+          <a href="jugend.html">Jugend</a>
           <a href="index.html#verein">Verein</a>
-          <a href="mitgliedschaft.html">Mitgliedschaft</a>
+          <a href="mitgliedschaft.html" class="is-current">Mitgliedschaft</a>
           <a href="service.html">Fans &amp; Service</a>
           <a href="service.html#kontakt" class="button button-secondary">Kontakt</a>
         </nav>
       </header>
 
       <main>
-        <section class="page-hero youth-hero">
+        <section class="page-hero">
           <div class="page-hero-copy">
-            <p class="eyebrow">Jugend</p>
-            <h1 id="youth-hero-title">Jugendfussball</h1>
-            <p id="youth-hero-intro"></p>
+            <p class="eyebrow">Mitgliedschaft</p>
+            <h1 id="membership-hero-title">Mitglied werden</h1>
+            <p id="membership-hero-intro"></p>
             <div class="hero-actions">
-              <a class="button button-primary" href="service.html#kontakt">Probetraining anfragen</a>
-              <a
-                class="button button-ghost"
-                href="https://www.fussball.de/verein/sv-zweckel-westfalen/-/id/00ES8GN8OC00001OVV0AG08LVUPGND5I"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Offizieller Vereinseintrag
-              </a>
+              <a class="button button-primary" href="service.html#kontakt">Mitgliedschaft anfragen</a>
+              <a class="button button-ghost" href="jugend.html">Zum Jugendportal</a>
             </div>
           </div>
           <div class="page-hero-aside">
-            <img class="youth-hero-image" src="assets/blog_bild_1.webp" alt="Jugend und Vereinsleben beim SV Zweckel" />
+            <img class="youth-hero-image" src="assets/header_bild_1.webp" alt="Stimmungsbild des SV Zweckel" />
           </div>
         </section>
 
         <section class="section-grid">
           <div class="section-heading compact">
-            <p class="eyebrow">Schwerpunkte</p>
-            <h2>Warum die Jugend einen eigenen Hub braucht</h2>
+            <p class="eyebrow">Nutzen</p>
+            <h2>Warum diese Seite fuer den Verein wichtig ist</h2>
           </div>
-          <div class="profile-grid" id="youth-values"></div>
-        </section>
-
-        <section class="section-grid">
-          <div class="section-heading compact">
-            <p class="eyebrow">Teams</p>
-            <h2>A- bis G-Junioren in einer klaren Struktur</h2>
-            <p>
-              Verifizierte FUSSBALL.DE-Profile sind direkt verlinkt. Fuer die uebrigen Jahrgaenge ist die Portalstruktur bereits so angelegt, dass spaeter Teamseiten daraus entstehen koennen.
-            </p>
-          </div>
-          <div class="profile-grid" id="youth-team-grid"></div>
+          <div class="profile-grid" id="membership-benefits"></div>
         </section>
 
         <section class="team-content-grid">
           <div class="team-content-main">
             <div class="section-heading compact">
-              <p class="eyebrow">Ansprechpartner</p>
-              <h2>Direkte Wege fuer Eltern und Talente</h2>
+              <p class="eyebrow">Ablauf</p>
+              <h2>So wird aus Interesse ein sauberer Einstieg</h2>
             </div>
-            <div class="board-grid" id="youth-contacts"></div>
+            <ol class="detail-list detail-list-numbered" id="membership-process"></ol>
           </div>
           <aside class="team-content-side">
             <div class="info-panel">
-              <p class="card-kicker">Probetraining</p>
-              <ol class="detail-list detail-list-numbered" id="youth-steps"></ol>
+              <p class="card-kicker">Dokumente</p>
+              <div class="profile-grid detail-summary-grid" id="membership-documents"></div>
             </div>
           </aside>
         </section>
 
         <section class="section-grid">
           <div class="section-heading compact">
-            <p class="eyebrow">Kanaele</p>
-            <h2>Jugendkommunikation braucht Website und Social zusammen</h2>
+            <p class="eyebrow">Einstiege</p>
+            <h2>Je nach Ziel direkt zum passenden Bereich</h2>
           </div>
-          <div class="social-grid" id="social-grid"></div>
+          <div class="profile-grid" id="membership-options"></div>
         </section>
       </main>
 
@@ -112,7 +92,7 @@
             <img class="footer-logo" src="assets/svzweckel_logo.jpg" alt="Logo des SV Zweckel" />
             <div>
               <p class="eyebrow">SV Zweckel 23 e. V.</p>
-              <p>Jugendportal fuer Ansprechpartner, Teamstruktur und Probetraining.</p>
+              <p>Mitgliedschaftsseite fuer Beitritt, Unterlagen und klare Einstiegspfade.</p>
             </div>
           </a>
           <div class="footer-socials" aria-label="Social Media Links">
@@ -123,14 +103,14 @@
         </div>
         <div class="footer-links">
           <a href="index.html">Startseite</a>
-          <a href="mannschaften.html">Mannschaften</a>
-          <a href="news.html">Aktuelles</a>
+          <a href="service.html">Fans &amp; Service</a>
+          <a href="jugend.html">Jugend</a>
           <a href="#top">Nach oben</a>
         </div>
       </footer>
     </div>
 
     <script src="data.js"></script>
-    <script src="jugend.js"></script>
+    <script src="mitgliedschaft.js"></script>
   </body>
 </html>

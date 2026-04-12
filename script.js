@@ -55,10 +55,10 @@ function renderQuicklinks() {
   quicklinksGrid.innerHTML = quicklinks
     .map(
       (item) => `
-        <article class="quicklink">
+        <a class="quicklink" href="${item.url || "#"}">
           <strong>${item.title}</strong>
           <p>${item.text}</p>
-        </article>
+        </a>
       `
     )
     .join("");

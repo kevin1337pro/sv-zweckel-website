@@ -7,6 +7,9 @@ Diese erste Version ist bewusst als statische Basis aufgebaut. So koennen wir De
 - `index.html`: komplette Startseite mit allen Hauptsektionen
 - `news.html`: eigenstaendige News-Seite mit Archiv, Kategorien und Suchfilter
 - `mannschaften.html`: Mannschafts-Hub mit offiziellen FUSSBALL.DE-Links
+- `jugend.html`: Jugendportal mit Ansprechpartnern und Probetraining
+- `mitgliedschaft.html`: eigene Seite fuer Beitritt und Einstiegswege
+- `service.html`: Serviceebene fuer Fans, Downloads, Sponsoring und Kontakt
 - `erste-mannschaft.html`: erste echte Team-Detailseite auf Basis offizieller Teamdaten
 - `zweite-mannschaft.html`: Detailseite der 2. Mannschaft
 - `dritte-mannschaft.html`: Detailseite der 3. Mannschaft
@@ -14,6 +17,9 @@ Diese erste Version ist bewusst als statische Basis aufgebaut. So koennen wir De
 - `data.js`: gemeinsame Inhaltsdaten fuer Startseite und Unterseiten
 - `script.js`: Startseitenlogik, Teamfilter, mobile Navigation und Demo-Interaktionen
 - `news.js`: Logik fuer Featured-News, Filterchips und News-Archiv
+- `jugend.js`: Logik fuer Jugend-Hub und Jugendteams
+- `mitgliedschaft.js`: Logik fuer Mitgliedschaftsseite und Einstiegswege
+- `service.js`: Logik fuer Serviceebene, Sponsoring und Kontakt
 - `teams.js`: Logik fuer Mannschafts-Hub, Vereinsdaten und Social-Kanaele
 - `team-detail.js`: wiederverwendbare Teamdetail-Logik fuer Mannschaftsseiten
 - `.github/workflows/deploy-pages.yml`: automatische Bereitstellung ueber GitHub Pages
@@ -47,6 +53,8 @@ Die Startseite wurde absichtlich als stark kuratierte Portal-Seite angelegt:
 - Mannschafts-Hub mit offiziellen Wettbewerbslinks von FUSSBALL.DE
 - erste echte Teamdetailseite fuer die 1. Mannschaft
 - weitere Detailseiten fuer die 2. und 3. Mannschaft
+- Jugend-Landingpage
+- eigene Seiten fuer Mitgliedschaft und Fans & Service
 - Jugend-Featureblock
 - Historie und Ansprechpartner
 - Mitgliedschaft und Kontakt
@@ -80,7 +88,7 @@ Die logische Reihenfolge ab hier:
 1. Jugend-Landingpage als eigene Unterseite aufbauen
 2. weitere Detailseiten fuer Walking Football und Jugendteams anlegen
 3. echtes Formularsystem anbinden
-4. Downloadbereich fuer Mitgliedsantrag und Satzung integrieren
+4. Downloadbereich fuer Mitgliedsantrag und Satzung mit echten PDFs integrieren
 5. Spielplan- und Tabellen-Einbindung vorbereiten
 6. danach CMS-Entscheidung treffen, z. B. WordPress, Sanity, Strapi oder statisch mit Netlify CMS
 
@@ -98,8 +106,8 @@ Anschliessend oeffnest du `http://localhost:8000`.
 
 Wenn wir sauber weitermachen wollen, bauen wir als naechstes nicht wahllos mehr Startseiten-Elemente, sondern:
 
-1. eine Jugend-Landingpage
-2. echte Teamdetailseiten fuer 1., 2., 3. Mannschaft und Jugend
+1. Walking Football und Jugendteams als weitere Detailseiten
+2. echte Formulare und Downloads einbauen
 3. spaeter einzelne News-Detailseiten oder CMS-Detailansichten
 
 Das ist der Punkt, an dem aus einer starken Startseite ein richtiges Webprojekt wird.

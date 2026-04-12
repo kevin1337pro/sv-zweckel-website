@@ -35,6 +35,138 @@ window.svzData = {
         "Direkter Kanal fuer Vereinsupdates und schnelle Kommunikation auf dem Handy.",
     },
   ],
+  membershipPortal: {
+    heroTitle: "Mitglied werden und den Verein aktiv mittragen",
+    intro:
+      "Die neue Mitgliedschaftsseite fuehrt Interessenten klar durch Nutzen, Ablauf und die spaetere Formularstrecke. Sie ist bewusst so aufgebaut, dass echte PDFs und Online-Formulare spaeter ohne Strukturbruch eingebunden werden koennen.",
+    benefits: [
+      {
+        title: "Teil einer starken Vereinsgemeinschaft",
+        text:
+          "Mitgliedschaft bedeutet mehr als Spielbetrieb: sie verbindet Mannschaften, Jugend, Ehrenamt, Vereinsleben und lokale Verwurzelung.",
+      },
+      {
+        title: "Klare Wege fuer Familien und Spieler",
+        text:
+          "Ob Jugend, Herren, Walking Football oder Foerderinteresse: die Seite soll den passenden Einstieg ohne Umwege bieten.",
+      },
+      {
+        title: "Saubere Conversion statt PDF-Friedhof",
+        text:
+          "Die kuenftige Version kann Mitgliedsantrag, Datenschutz-Hinweise und Beitragsinfos sichtbar und nachvollziehbar ausliefern.",
+      },
+    ],
+    process: [
+      "Passenden Einstieg waehlen: Jugend, Herren, Breitensport oder Foerdermitgliedschaft",
+      "Mitgliedschaft oder Probetraining ueber das Kontaktformular anfragen",
+      "Vereinsrueckmeldung und weitere Unterlagen erhalten",
+      "Beitritt oder Einstieg final abstimmen",
+    ],
+    documents: [
+      {
+        title: "Mitgliedsantrag",
+        status: "Als Downloadbereich vorgesehen",
+        text:
+          "Der bestehende Antrag von der Altseite wird hier spaeter als klar sichtbarer PDF-Download eingebunden.",
+      },
+      {
+        title: "Datenschutz-Hinweise",
+        status: "Als Downloadbereich vorgesehen",
+        text:
+          "DSGVO-relevante Hinweise und Formulare werden zusammen mit dem Antrag gebuendelt dargestellt.",
+      },
+      {
+        title: "Satzung und Vereinsinfos",
+        status: "Als Downloadbereich vorgesehen",
+        text:
+          "Satzung, Vereinslied oder 100-Jahre-Inhalte koennen von hier aus zentral erreichbar gemacht werden.",
+      },
+    ],
+    options: [
+      {
+        title: "Jugend & Probetraining",
+        text:
+          "Ideal fuer Eltern und Talente, die zunaechst einen sportlichen Einstieg suchen und erst danach ueber die feste Mitgliedschaft entscheiden.",
+        url: "jugend.html",
+        label: "Zum Jugendportal",
+      },
+      {
+        title: "Herrenbereich",
+        text:
+          "Geeignet fuer Spieler, Rueckkehrer oder Interessierte, die direkt den Weg in den aktiven Seniorenbereich suchen.",
+        url: "mannschaften.html",
+        label: "Zu den Mannschaften",
+      },
+      {
+        title: "Direkte Anfrage",
+        text:
+          "Wenn noch unklar ist, welcher Einstieg passt, fuehrt die Seite direkt in den Kontaktbereich des Vereins.",
+        url: "service.html#kontakt",
+        label: "Kontakt aufnehmen",
+      },
+    ],
+  },
+  servicePortal: {
+    heroTitle: "Fans, Service und Vereinsalltag an einem Ort",
+    intro:
+      "Diese Seite buendelt die praktischen Dinge, die auf klassischen Vereinsseiten oft verstreut sind: Anfahrt, Platzinfos, Downloads, Sponsoring und direkte Kontaktwege.",
+    accessCards: [
+      {
+        title: "Anfahrt",
+        text:
+          "SV Zweckel 23 e. V., Dorstener Str. 43, 45966 Gladbeck. Die Heimspielstaette ist der Kunstrasenplatz an der Dorstener Strasse.",
+      },
+      {
+        title: "Schneller Kontakt",
+        text:
+          "Telefon: 0 20 43 / 5 17 43 und E-Mail: info@svzweckel.de bleiben sichtbar als direkte Servicewege.",
+      },
+      {
+        title: "Offizielle Vereinsdaten",
+        text:
+          "FUSSBALL.DE und die Vereinsseite bilden zusammen die verbindliche Basis fuer Spielbetrieb und Teamstruktur.",
+      },
+    ],
+    serviceBlocks: [
+      {
+        title: "Downloads",
+        text:
+          "Mitgliedsantrag, Datenschutz-Hinweise und Satzung werden hier spaeter als zentraler Downloadbereich ausgespielt.",
+      },
+      {
+        title: "Sponsoring",
+        text:
+          "Lokale Partner sollen sichtbar auf eine eigene Sponsorendarstellung, Reichweite und Kontaktfuehrung treffen.",
+      },
+      {
+        title: "Spieltag & Service",
+        text:
+          "Anfahrt, Platzhinweise, wichtige Vereinsinfos und kuenftige Eventmodule gehoeren auf dieselbe Serviceebene.",
+      },
+    ],
+    sponsorReasons: [
+      "Lokale Sichtbarkeit rund um Verein, Spieltage und Jugend",
+      "Klare Platzierung auf Website, News und kuenftigem Sponsorensegment",
+      "Direkter Kontakt fuer individuelle Partnerschaften",
+    ],
+    contacts: [
+      {
+        label: "Telefon",
+        value: "0 20 43 / 5 17 43",
+        href: "tel:+49204351743",
+      },
+      {
+        label: "E-Mail",
+        value: "info@svzweckel.de",
+        href: "mailto:info@svzweckel.de",
+      },
+      {
+        label: "Adresse",
+        value: "Dorstener Str. 43, 45966 Gladbeck",
+        href: "https://www.fussball.de/verein/sv-zweckel-westfalen/-/id/00ES8GN8OC00001OVV0AG08LVUPGND5I",
+      },
+    ],
+  },
   youthPortal: {
     heroTitle: "Jugendfussball mit klarem Einstieg fuer Eltern, Talente und Trainer",
     intro:
@@ -228,18 +360,22 @@ window.svzData = {
     {
       title: "Mitglied werden",
       text: "Klare Conversion-Strecke fuer Beitritt, Formulare und Ansprechpartner.",
+      url: "mitgliedschaft.html",
     },
     {
       title: "Jugend & Probetraining",
       text: "Eltern und Talente finden Trainingszeiten, Teams und Kontakt ohne Umwege.",
+      url: "jugend.html",
     },
     {
       title: "Spielplan",
       text: "Vorbereitet fuer die spaetere Einbindung von Tabellen und Live-Daten.",
+      url: "mannschaften.html",
     },
     {
       title: "Sponsoring",
       text: "Eigener Einstieg fuer lokale Partner, Leistungen und Kontaktpunkte.",
+      url: "service.html",
     },
   ],
   teams: [
