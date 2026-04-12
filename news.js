@@ -109,7 +109,7 @@ function renderArchive() {
           <div class="archive-card-body">
             <div class="meta-row">
               <span class="tag">${item.category}</span>
-              <span>${item.team}</span>
+              <span class="meta-secondary">${item.team}</span>
             </div>
             <h3>${item.title}</h3>
             <p class="archive-date">${item.date} | ${item.author}</p>

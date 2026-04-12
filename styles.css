@@ -42,6 +42,7 @@ body {
     linear-gradient(180deg, #06100c 0%, #08140e 36%, #050906 100%);
   color: var(--text);
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 img {
@@ -87,6 +88,12 @@ textarea {
   display: flex;
   align-items: center;
   gap: 0.9rem;
+  min-width: 0;
+}
+
+.brand-lockup,
+.brand-link > div {
+  min-width: 0;
 }
 
 .brand-logo {
@@ -282,7 +289,7 @@ textarea {
   position: absolute;
   right: 1.2rem;
   bottom: 1.2rem;
-  width: min(82%, 360px);
+  width: min(88%, 420px);
   padding: 1.2rem;
   border-radius: var(--radius-lg);
   background: rgba(6, 11, 8, 0.78);
@@ -292,14 +299,24 @@ textarea {
 }
 
 .scoreline {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
 }
 
+.scoreline > div {
+  min-width: 0;
+}
+
+.scoreline > div:last-child {
+  text-align: right;
+}
+
 .scoreline strong {
-  font-size: 1.2rem;
+  display: block;
+  font-size: clamp(1.4rem, 2.1vw, 2rem);
+  line-height: 1.05;
 }
 
 .score-divider {
@@ -316,6 +333,7 @@ textarea {
 .overlay-meta {
   margin: 1rem 0 0;
   color: var(--muted);
+  max-width: 30ch;
 }
 
 .ticker-strip,
@@ -411,6 +429,7 @@ textarea {
 }
 
 .matchcenter-panel,
+.info-panel,
 .timeline-panel,
 .board-panel,
 .contact-card,
@@ -508,6 +527,7 @@ textarea {
 .meta-row {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.7rem;
   color: var(--muted);
   font-size: 0.92rem;
@@ -530,6 +550,12 @@ textarea {
 
 .quicklinks {
   grid-template-columns: 1fr;
+}
+
+.quicklinks-column {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
 }
 
 .social-grid,
@@ -562,13 +588,17 @@ textarea {
   margin-bottom: 0.3rem;
 }
 
+.quicklink p {
+  margin: 0;
+}
+
 .search-panel {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .search-label {
   display: block;
-  margin: 0.8rem 0 0.45rem;
+  margin: 0;
   font-weight: 600;
 }
 
@@ -591,6 +621,21 @@ textarea {
 
 .search-hint {
   color: var(--muted);
+  margin-bottom: 0;
+}
+
+.info-panel h3,
+.info-panel .search-label {
+  margin-top: 0;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.12;
+}
+
+.info-panel p {
+  margin-top: 0;
+}
+
+.info-panel > :last-child {
   margin-bottom: 0;
 }
 
@@ -847,6 +892,8 @@ textarea {
 }
 
 .archive-controls {
+  display: grid;
+  gap: 0.9rem;
   padding: 1.2rem;
   border-radius: var(--radius-xl);
   border: 1px solid var(--border);
@@ -857,7 +904,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .filter-chip {
@@ -892,6 +939,11 @@ textarea {
 
 .archive-card-body h3 {
   margin: 0.25rem 0 0.5rem;
+}
+
+.meta-secondary {
+  color: var(--muted);
+  font-size: 0.98rem;
 }
 
 .archive-body {
@@ -1181,6 +1233,10 @@ textarea {
     min-height: 460px;
   }
 
+  .hero-overlay-card {
+    width: min(88%, 430px);
+  }
+
   .featured-news-media img {
     min-height: 280px;
   }
@@ -1188,12 +1244,19 @@ textarea {
 
 @media (max-width: 840px) {
   .site-header {
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
     border-radius: 28px;
+    padding: 0.95rem 1rem;
   }
 
   .nav-toggle {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 58px;
+    padding: 0.8rem 1.15rem;
   }
 
   .primary-nav {
@@ -1219,6 +1282,38 @@ textarea {
     width: 100%;
   }
 
+  .brand-logo {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-title {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    line-height: 1.12;
+  }
+
+  .hero-overlay-card {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .scoreline strong {
+    font-size: clamp(1.15rem, 5vw, 1.6rem);
+  }
+
+  .score-divider {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay-meta {
+    max-width: none;
+    font-size: 0.98rem;
+  }
+
   .hero-copy h1,
   .section-heading h2,
   .featured-copy h2,
@@ -1228,6 +1323,65 @@ textarea {
 
   .site-shell {
     width: min(100vw - 1.2rem, 100%);
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    gap: 0.8rem;
+  }
+
+  .brand-link {
+    gap: 0.7rem;
+  }
+
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand-title {
+    font-size: 0.95rem;
+  }
+
+  .site-header .eyebrow {
+    letter-spacing: 0.12em;
+    font-size: 0.66rem;
+  }
+
+  .nav-toggle {
+    min-height: 54px;
+    padding: 0.75rem 1rem;
+  }
+
+  .hero-section {
+    gap: 1rem;
+  }
+
+  .hero-stage {
+    min-height: 420px;
+  }
+
+  .scoreline {
+    gap: 0.75rem;
+  }
+
+  .scoreline strong {
+    font-size: 1rem;
+  }
+
+  .club-tag {
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+  }
+
+  .info-panel {
+    padding: 1.2rem;
+  }
+
+  .info-panel h3,
+  .info-panel .search-label {
+    font-size: 1.2rem;
   }
 }
 
