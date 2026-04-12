@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SV Zweckel 23 e. V. | Moderne Vereinswebsite</title>
+    <meta
+      name="description"
+      content="Moderne Konzept-Website fuer den SV Zweckel 23 e. V. mit Matchcenter, News, Mannschaften, Jugend, Historie und Kontakt."
+    />
+    <link rel="preload" href="assets/header_bild_1.webp" as="image" />
+    <link rel="preload" href="assets/svzweckel_logo.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <div class="brand-lockup">
+          <a class="brand-link" href="#top" aria-label="Zur Startseite">
+            <img
+              class="brand-logo"
+              src="assets/svzweckel_logo.jpg"
+              alt="Logo des SV Zweckel"
+            />
+            <div>
+              <p class="eyebrow">Seit 1923</p>
+              <p class="brand-title">SV Zweckel 23 e. V.</p>
+            </div>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menue
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+          <a href="news.html">Aktuelles</a>
+          <a href="mannschaften.html">Mannschaften</a>
+          <a href="#jugend">Jugend</a>
+          <a href="#verein">Verein</a>
+          <a href="#mitgliedschaft">Mitgliedschaft</a>
+          <a href="#service">Fans &amp; Service</a>
+          <a href="#kontakt" class="button button-secondary">Kontakt</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-copy">
+            <p class="eyebrow">Schwarz. Gruen. Gladbeck.</p>
+            <h1>Die neue digitale Heimat fuer den SV Zweckel.</h1>
+            <p class="hero-text">
+              Eine moderne Vereinswebsite mit starkem Spieltagsfokus, klaren
+              Einstiegen fuer Fans, Spieler, Eltern und Sponsoren und einer
+              Struktur, die sich spaeter sauber in ein CMS ueberfuehren laesst.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#mitgliedschaft"
+                >Mitglied werden</a
+              >
+              <a class="button button-ghost" href="mannschaften.html"
+                >Teams entdecken</a
+              >
+              <a
+                class="button button-ghost"
+                id="official-club-link"
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                >Offiziell auf FUSSBALL.DE</a
+              >
+            </div>
+            <ul class="hero-pills" aria-label="Hauptvorteile">
+              <li>Mobiloptimiert</li>
+              <li>Pflegeleichte Struktur</li>
+              <li>Seit 1923 lokal verwurzelt</li>
+            </ul>
+          </div>
+
+          <div class="hero-stage">
+            <img
+              src="assets/header_bild_1.webp"
+              alt="Stimmungsbild des SV Zweckel"
+            />
+            <div class="hero-overlay-card">
+              <p class="card-kicker">Matchcenter Demo</p>
+              <div class="scoreline">
+                <div>
+                  <p class="club-tag">SV Zweckel</p>
+                  <strong>Heimspieltag</strong>
+                </div>
+                <span class="score-divider">vs</span>
+                <div>
+                  <p class="club-tag">Gast</p>
+                  <strong>Ligagegner</strong>
+                </div>
+              </div>
+              <p class="overlay-meta">
+                Uli-Simon-Arena, Gladbeck<br />
+                Spielplan und Ergebnisse koennen spaeter dynamisch angebunden
+                werden.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ticker-strip" aria-label="Schnellzugriffe">
+          <div class="ticker-card">
+            <span class="ticker-label">Nutzerfokus</span>
+            <strong>Fans, Jugend, Eltern, Sponsoren und Mitglieder</strong>
+          </div>
+          <div class="ticker-card">
+            <span class="ticker-label">Designrichtung</span>
+            <strong>Emotionale Bildsprache mit klarer Portalstruktur</strong>
+          </div>
+          <div class="ticker-card banner-card">
+            <img
+              src="assets/sv_zweckel_banner.jpg"
+              alt="Banner des SV Zweckel"
+            />
+          </div>
+        </section>
+
+        <section class="stats-strip" id="official-club-meta"></section>
+
+        <section class="section-grid" id="aktuelles">
+          <div class="section-heading">
+            <p class="eyebrow">Startseite</p>
+            <h2>Kuratiert wie ein modernes Vereinsportal</h2>
+            <p>
+              Die Startseite fuehrt auf einen Blick in Spieltag, News,
+              Mannschaften, Jugend und Vereinsleben. Genau diese Hierarchie
+              macht die Seite spaeter fuer Redaktion und Nutzer pflegeleicht.
+            </p>
+          </div>
+
+          <div class="matchcenter-panel">
+            <div class="panel-head">
+              <div>
+                <p class="card-kicker">Matchcenter</p>
+                <h3>Naechster sichtbarer Einstieg fuer Spieltage</h3>
+              </div>
+              <span class="live-chip">Vorbereitet fuer API oder manuelle Pflege</span>
+            </div>
+
+            <div class="matchcenter-grid">
+              <article class="fixture-card accent-green">
+                <p class="fixture-label">Naechstes Spiel</p>
+                <h4>1. Mannschaft</h4>
+                <p>Sonntag, 19. April 2026</p>
+                <p>Uli-Simon-Arena, Gladbeck</p>
+              </article>
+
+              <article class="fixture-card accent-dark">
+                <p class="fixture-label">Letztes Ergebnis</p>
+                <h4>3:1 Sieg</h4>
+                <p>Starker Heimauftritt mit klarer Storyline fuer die Startseite.</p>
+              </article>
+
+              <article class="fixture-card accent-outline">
+                <p class="fixture-label">Direktzugriff</p>
+                <h4>Spielplan &amp; Tabelle</h4>
+                <p>Platzhalter fuer FUSSBALL.DE- oder Vereinsdaten-Anbindung.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-split">
+          <div class="news-column">
+            <div class="section-heading compact">
+              <p class="eyebrow">Aktuelles</p>
+              <h2>Top-News mit klaren Kategorien</h2>
+              <p>
+                Die Startseite zeigt nur die wichtigsten Meldungen. Das volle
+                Archiv liegt auf der eigenstaendigen News-Seite.
+              </p>
+              <a class="button button-ghost" href="news.html">Alle News ansehen</a>
+            </div>
+            <div class="news-grid" id="news-grid"></div>
+          </div>
+
+          <aside class="quicklinks-column" id="service">
+            <div class="info-panel">
+              <p class="card-kicker">Schnellzugriffe</p>
+              <h3>Die wichtigsten Aktionen ohne Umwege</h3>
+              <div class="quicklinks" id="quicklinks"></div>
+            </div>
+
+            <div class="info-panel search-panel">
+              <p class="card-kicker">Inhalte finden</p>
+              <label class="search-label" for="site-search"
+                >Teams und Schwerpunkte filtern</label
+              >
+              <input
+                id="site-search"
+                class="search-input"
+                type="search"
+                placeholder="z. B. Jugend, Herren, Sponsoring"
+              />
+              <p class="search-hint">
+                Der Filter arbeitet in dieser Demo direkt auf den Teamkarten.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section-grid" id="mannschaften">
+          <div class="section-heading">
+            <p class="eyebrow">Mannschaften</p>
+            <h2>Klare Team-Landingpages statt reiner News-Kategorien</h2>
+            <p>
+              Jede Mannschaft sollte spaeter eine konsistente Landingpage mit
+              Ansprechpartnern, Trainingszeiten, Tabelle, Spielplan und News
+              erhalten. Die folgenden Karten zeigen das Inhaltsmodell dafuer.
+            </p>
+          </div>
+          <div class="team-grid" id="team-grid"></div>
+        </section>
+
+        <section class="featured-story" id="jugend">
+          <div class="featured-media">
+            <img
+              src="assets/blog_bild_1.webp"
+              alt="Symbolbild fuer Vereinsleben und Jugend"
+            />
+          </div>
+          <div class="featured-copy">
+            <p class="eyebrow">Jugend im Fokus</p>
+            <h2>Ein eigener Einstieg fuer Eltern, Talente und Probetraining</h2>
+            <p>
+              Die Jugend braucht auf der neuen Seite mehr als ein Untermenue:
+              ein klares Jugendportal mit Ansprechpartnern, Trainingszeiten,
+              News, Jugendkonzept und einem offensiven Probetraining-CTA.
+            </p>
+            <ul class="feature-list">
+              <li>A- bis G-Junioren sauber strukturieren</li>
+              <li>Trainer, Trainingszeiten und Kontakt sichtbar machen</li>
+              <li>Probetraining und Jugend-News prominent aufbauen</li>
+            </ul>
+            <a class="button button-primary" href="#kontakt"
+              >Probetraining anfragen</a
+            >
+          </div>
+        </section>
+
+        <section class="section-grid" id="verein">
+          <div class="section-heading">
+            <p class="eyebrow">Verein</p>
+            <h2>Tradition, Ansprechpartner und Vereinsleben sichtbar machen</h2>
+            <p>
+              Der Verein hat starke Substanz: Historie, Vorstand, Vereinslied,
+              Mitgliedschaft und 100 Jahre Vereinsgeschichte. Diese Inhalte
+              bekommen hier eine moderne, besser lesbare Buehne.
+            </p>
+          </div>
+
+          <div class="history-board">
+            <div class="timeline-panel">
+              <p class="card-kicker">Historie</p>
+              <div class="timeline" id="timeline"></div>
+            </div>
+
+            <div class="board-panel">
+              <p class="card-kicker">Ansprechpartner</p>
+              <div class="board-grid" id="board-grid"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="membership-section" id="mitgliedschaft">
+          <div class="membership-copy">
+            <p class="eyebrow">Mitgliedschaft</p>
+            <h2>Ein sichtbarer CTA fuer neue Mitglieder und Sponsoren</h2>
+            <p>
+              Auf der alten Seite sind Antraege und Hinweise vorhanden, aber
+              nicht offensiv genug praesentiert. Die neue Website setzt hier auf
+              klare Umwandlungspfade fuer Mitgliedschaft, Probetraining und
+              Sponsoring.
+            </p>
+          </div>
+
+          <div class="membership-cards">
+            <article class="membership-card">
+              <h3>Mitglied werden</h3>
+              <p>
+                Formulare, Beitraege und Datenschutz-Hinweise werden in einem
+                strukturierten Downloadbereich gebuendelt.
+              </p>
+              <a href="#kontakt">Mitgliedschaft anfragen</a>
+            </article>
+
+            <article class="membership-card">
+              <h3>Sponsoring</h3>
+              <p>
+                Eine eigene Sponsorenseite mit Leistungen, Reichweite und
+                Ansprechpartnern ist technisch bereits mitgedacht.
+              </p>
+              <a href="#kontakt">Sponsoring besprechen</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-grid contact-grid" id="kontakt">
+          <div class="section-heading">
+            <p class="eyebrow">Kontakt</p>
+            <h2>Die wichtigsten Vereinsdaten direkt erreichbar</h2>
+          </div>
+
+          <div class="contact-card">
+            <h3>SV Zweckel 23 e. V.</h3>
+            <p>Dorstener Strasse 43<br />45966 Gladbeck</p>
+            <p>Telefon: <a href="tel:+49204351743">0 20 43 / 5 17 43</a></p>
+            <p>
+              E-Mail:
+              <a href="mailto:info@svzweckel.de">info@svzweckel.de</a>
+            </p>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Dein Name" />
+            </div>
+            <div class="form-row">
+              <label for="email">E-Mail</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="dein.name@example.com"
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Nachricht</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Worum geht es?"
+              ></textarea>
+            </div>
+            <button class="button button-primary" type="submit">
+              Anfrage absenden
+            </button>
+            <p class="form-note">
+              Demo-Formular fuer die Layoutphase. Im naechsten Schritt binden
+              wir eine echte DSGVO-konforme Formularloesung an.
+            </p>
+          </form>
+        </section>
+
+        <section class="section-grid">
+          <div class="section-heading compact">
+            <p class="eyebrow">Vereinskanaele</p>
+            <h2>Social und Messenger direkt erreichbar</h2>
+            <p>
+              Instagram, TikTok und WhatsApp ergaenzen die Website als schnelle
+              Vereinskanaele fuer Fans, Spieler und Eltern.
+            </p>
+          </div>
+          <div class="social-grid" id="social-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <a class="footer-brand-link" href="#top" aria-label="Zur Startseite">
+            <img
+              class="footer-logo"
+              src="assets/svzweckel_logo.jpg"
+              alt="Logo des SV Zweckel"
+            />
+            <div>
+              <p class="eyebrow">SV Zweckel 23 e. V.</p>
+              <p>
+                Moderne Vereinswebsite als Startpunkt fuer Design, Struktur und
+                Migration.
+              </p>
+            </div>
+          </a>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a
+              class="social-icon-link"
+              href="https://www.instagram.com/svzweckel23/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1.2"></circle>
+              </svg>
+            </a>
+            <a
+              class="social-icon-link"
+              href="https://www.tiktok.com/@sv_zweckel_23/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="TikTok des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14.5 4c.6 1.8 1.9 3 3.7 3.3v2.7a6.3 6.3 0 0 1-3.7-1.1v5.3a5.2 5.2 0 1 1-5.2-5.2c.3 0 .7 0 1 .1v2.8a2.6 2.6 0 1 0 1.6 2.4V4h2.6Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-icon-link"
+              href="https://whatsapp.com/channel/0029VbCXFjVKbYML54DEDv0Q"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp Kanal des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 4a8 8 0 0 0-6.9 12l-1 4 4.1-1A8 8 0 1 0 12 4Zm4.4 11.3c-.2.6-1.2 1.2-1.7 1.2s-1 .2-3.1-.6c-2.6-1-4.3-3.7-4.4-3.8s-1-1.3-1-2.4  .6-1.7.9-1.9.6-.3.8-.3h.6c.2 0 .4 0 .5.4l.7 1.7c.1.3.1.4 0 .6l-.3.5c-.1.1-.2.3 0 .5.2.4.8 1.2 1.7 1.9 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.5-.1l.8-.9c.2-.2.3-.2.5-.1l1.7.8c.3.1.4.2.5.4.1.2.1.9-.1 1.5Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#top">Nach oben</a>
+          <a href="news.html">Aktuelles</a>
+          <a href="mannschaften.html">Mannschaften</a>
+          <a href="#verein">Verein</a>
+          <a href="#mitgliedschaft">Mitgliedschaft</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

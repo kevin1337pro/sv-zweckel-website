@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aktuelles | SV Zweckel 23 e. V.</title>
+    <meta
+      name="description"
+      content="News-Archiv des SV Zweckel 23 e. V. mit Top-News, Kategorien und Suchfilter."
+    />
+    <link rel="preload" href="assets/header_bild_1.webp" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="news-page">
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <div class="brand-lockup">
+          <a class="brand-link" href="index.html" aria-label="Zur Startseite">
+            <img
+              class="brand-logo"
+              src="assets/svzweckel_logo.jpg"
+              alt="Logo des SV Zweckel"
+            />
+            <div>
+              <p class="eyebrow">Seit 1923</p>
+              <p class="brand-title">SV Zweckel 23 e. V.</p>
+            </div>
+          </a>
+        </div>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          Menue
+        </button>
+
+        <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
+          <a href="news.html" class="is-current">Aktuelles</a>
+          <a href="mannschaften.html">Mannschaften</a>
+          <a href="index.html#jugend">Jugend</a>
+          <a href="index.html#verein">Verein</a>
+          <a href="index.html#mitgliedschaft">Mitgliedschaft</a>
+          <a href="index.html#service">Fans &amp; Service</a>
+          <a href="index.html#kontakt" class="button button-secondary">Kontakt</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Aktuelles</p>
+            <h1>News, Spielberichte und Vereinsmeldungen an einem Ort</h1>
+            <p>
+              Diese Seite ist der erste echte Archiv-Baustein der neuen
+              Website. Sie zeigt, wie kuenftige News nach Bereichen,
+              Mannschaften und Themen sauber organisiert werden koennen.
+            </p>
+          </div>
+          <div class="page-hero-aside">
+            <p class="card-kicker">Warum diese Seite wichtig ist</p>
+            <p>
+              Ein zentrales News-Archiv macht die Seite redaktionell staerker
+              und schafft einen klaren Unterschied zwischen Startseite,
+              Teamseiten und statischen Vereinsinformationen.
+            </p>
+            <a class="button button-primary" href="index.html">Zur Startseite</a>
+          </div>
+        </section>
+
+        <section class="section-grid">
+          <div class="section-heading compact">
+            <p class="eyebrow">Top-Beitrag</p>
+            <h2>Das grosse Thema zuerst</h2>
+          </div>
+          <div id="featured-news"></div>
+        </section>
+
+        <section class="section-grid">
+          <div class="archive-toolbar">
+            <div>
+              <p class="eyebrow">Archiv</p>
+              <h2>Alle News auf einen Blick</h2>
+              <p id="archive-count" class="archive-count">0 Beitraege</p>
+            </div>
+            <div class="archive-controls">
+              <div class="filter-row" id="news-filters"></div>
+              <label class="search-label" for="archive-search">News durchsuchen</label>
+              <input
+                id="archive-search"
+                class="search-input"
+                type="search"
+                placeholder="z. B. Jugend, Heimspieltag, Sponsoring"
+              />
+            </div>
+          </div>
+
+          <div class="archive-grid" id="news-archive"></div>
+        </section>
+
+        <section class="section-grid">
+          <div class="section-heading compact">
+            <p class="eyebrow">Kanaele</p>
+            <h2>Bleib parallel zur Website am Verein dran</h2>
+          </div>
+          <div class="social-grid" id="social-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <a class="footer-brand-link" href="index.html" aria-label="Zur Startseite">
+            <img
+              class="footer-logo"
+              src="assets/svzweckel_logo.jpg"
+              alt="Logo des SV Zweckel"
+            />
+            <div>
+              <p class="eyebrow">SV Zweckel 23 e. V.</p>
+              <p>News-Archiv als zweiter Baustein der neuen Vereinswebsite.</p>
+            </div>
+          </a>
+          <div class="footer-socials" aria-label="Social Media Links">
+            <a
+              class="social-icon-link"
+              href="https://www.instagram.com/svzweckel23/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="1.2"></circle>
+              </svg>
+            </a>
+            <a
+              class="social-icon-link"
+              href="https://www.tiktok.com/@sv_zweckel_23/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="TikTok des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14.5 4c.6 1.8 1.9 3 3.7 3.3v2.7a6.3 6.3 0 0 1-3.7-1.1v5.3a5.2 5.2 0 1 1-5.2-5.2c.3 0 .7 0 1 .1v2.8a2.6 2.6 0 1 0 1.6 2.4V4h2.6Z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="social-icon-link"
+              href="https://whatsapp.com/channel/0029VbCXFjVKbYML54DEDv0Q"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp Kanal des SV Zweckel"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 4a8 8 0 0 0-6.9 12l-1 4 4.1-1A8 8 0 1 0 12 4Zm4.4 11.3c-.2.6-1.2 1.2-1.7 1.2s-1 .2-3.1-.6c-2.6-1-4.3-3.7-4.4-3.8s-1-1.3-1-2.4  .6-1.7.9-1.9.6-.3.8-.3h.6c.2 0 .4 0 .5.4l.7 1.7c.1.3.1.4 0 .6l-.3.5c-.1.1-.2.3 0 .5.2.4.8 1.2 1.7 1.9 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.5-.1l.8-.9c.2-.2.3-.2.5-.1l1.7.8c.3.1.4.2.5.4.1.2.1.9-.1 1.5Z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Startseite</a>
+          <a href="mannschaften.html">Mannschaften</a>
+          <a href="#top">Nach oben</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="news.js"></script>
+  </body>
+</html>
