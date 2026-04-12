@@ -35,6 +35,103 @@ window.svzData = {
         "Direkter Kanal fuer Vereinsupdates und schnelle Kommunikation auf dem Handy.",
     },
   ],
+  youthPortal: {
+    heroTitle: "Jugendfussball mit klarem Einstieg fuer Eltern, Talente und Trainer",
+    intro:
+      "Die Jugend ist einer der wichtigsten Wachstumsbereiche des Vereins. Deshalb bekommt sie hier einen eigenen, serviceorientierten Hub mit Teamlogik, Ansprechpartnern, Probetraining und verifizierten FUSSBALL.DE-Daten.",
+    values: [
+      {
+        title: "Klare Wege fuer Eltern",
+        text:
+          "Statt verstreuter Menuepunkte werden Ansprechpartner, Teamstruktur und der Weg zum Probetraining an einem Ort gebuendelt.",
+      },
+      {
+        title: "Sichtbarkeit fuer alle Jahrgaenge",
+        text:
+          "A- bis G-Junioren bekommen einen wertigen Rahmen. Leistungsdaten werden dort eingebunden, wo offizielle Profile verfuegbar sind.",
+      },
+      {
+        title: "Pflegeleicht fuer den Verein",
+        text:
+          "Die Jugendseite ist so angelegt, dass Teamkontakte, Trainingszeiten und News spaeter direkt aus einem CMS oder Datenmodell gepflegt werden koennen.",
+      },
+    ],
+    contacts: [
+      {
+        name: "Jens Bremershemke / Oliver Wujek",
+        role: "Jugendleitung",
+      },
+      {
+        name: "Rene Schweikl",
+        role: "Jugendgeschaeftsfuehrer",
+      },
+      {
+        name: "Max Scharmacher",
+        role: "Oeffentlichkeitsarbeit",
+      },
+    ],
+    steps: [
+      "Passendes Jugendteam identifizieren",
+      "Kontakt ueber Vereinsseite oder Jugendleitung aufnehmen",
+      "Probetraining abstimmen",
+      "Danach Teamseite, Trainingszeiten und weitere Infos erhalten",
+    ],
+  },
+  youthTeams: [
+    {
+      name: "A-Junioren",
+      stage: "Leistungsnahe Endstufe",
+      summary:
+        "Der aelteste Nachwuchsbereich ist die Bruecke zwischen Jugendfussball und Herrenbereich.",
+      status: "Strukturell eingeplant fuer eigene Teamseite",
+    },
+    {
+      name: "B-Junioren",
+      stage: "Aufbaubereich",
+      summary:
+        "Verifiziertes offizielles Profil mit Tabellenstand, Torbilanz und naechstem Spiel.",
+      status: "KJL B B-Jugend | 6. Platz | 13 Punkte | 39:23 Tore",
+      profileUrl:
+        "https://www.fussball.de/mannschaft/sv-zweckel-23-sv-zweckel-westfalen/-/saison/2526/team-id/02M9D1KKGK000000VS5489B1VV4JLPLE",
+    },
+    {
+      name: "C-Junioren",
+      stage: "Aufbaubereich",
+      summary:
+        "Ebenfalls verifiziertes offizielles Profil mit Spielplan- und Wettbewerbsdaten.",
+      status: "KJL A C-Jugend | 8. Platz | 21 Punkte | 38:37 Tore",
+      profileUrl:
+        "https://www.fussball.de/mannschaft/sv-zweckel-sv-zweckel-westfalen/-/saison/2526/team-id/011MIAFTU0000000VTVG0001VTR8C1K7",
+    },
+    {
+      name: "D-Junioren",
+      stage: "Entwicklungsbereich",
+      summary:
+        "Wichtige Phase fuer technische Entwicklung, Bindung an den Verein und strukturierte Trainerkommunikation.",
+      status: "Portal vorgesehen fuer Trainingszeiten und Ansprechpartner",
+    },
+    {
+      name: "E-Junioren",
+      stage: "Entwicklungsbereich",
+      summary:
+        "Ideal fuer familienfreundliche Teamseiten mit klarer Kontaktfuehrung und Eventhinweisen.",
+      status: "Portal vorgesehen fuer Trainingszeiten und Ansprechpartner",
+    },
+    {
+      name: "F-Junioren",
+      stage: "Frueher Aufbau",
+      summary:
+        "Niedrigschwellige Inhalte, Trainerkontakte und ein sichtbarer Probetraining-CTA sind hier besonders wichtig.",
+      status: "Portal vorgesehen fuer Einstieg und Kontakt",
+    },
+    {
+      name: "G-Junioren",
+      stage: "Bambini / Einstieg",
+      summary:
+        "Der erste Beruehrungspunkt fuer Familien mit dem Verein. Die Website muss hier maximale Klarheit liefern.",
+      status: "Portal vorgesehen fuer Einstieg und Kontakt",
+    },
+  ],
   newsItems: [
     {
       slug: "heimspieltag-im-fokus",

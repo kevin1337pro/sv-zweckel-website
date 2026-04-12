@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2. Mannschaft | SV Zweckel 23 e. V.</title>
+    <title>Jugend | SV Zweckel 23 e. V.</title>
     <meta
       name="description"
-      content="Detailseite der 2. Mannschaft des SV Zweckel 23 e. V. mit offiziellen FUSSBALL.DE-Daten, Spielplan-Ausblick und Teamstruktur."
+      content="Jugendportal des SV Zweckel 23 e. V. mit Ansprechpartnern, Teamstruktur, Probetraining und offiziellen FUSSBALL.DE-Daten."
     />
     <link rel="preload" href="assets/blog_bild_1.webp" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body data-team-slug="zweite-mannschaft">
+  <body>
     <div class="site-shell">
       <header class="site-header" id="top">
         <div class="brand-lockup">
@@ -23,79 +23,96 @@
             </div>
           </a>
         </div>
+
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           Menue
         </button>
+
         <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
           <a href="news.html">Aktuelles</a>
-          <a href="mannschaften.html" class="is-current">Mannschaften</a>
-          <a href="jugend.html">Jugend</a>
+          <a href="mannschaften.html">Mannschaften</a>
+          <a href="jugend.html" class="is-current">Jugend</a>
           <a href="index.html#verein">Verein</a>
           <a href="index.html#mitgliedschaft">Mitgliedschaft</a>
           <a href="index.html#service">Fans &amp; Service</a>
           <a href="index.html#kontakt" class="button button-secondary">Kontakt</a>
         </nav>
       </header>
+
       <main>
-        <section class="team-hero">
-          <div class="team-hero-copy">
-            <p class="eyebrow" id="team-hero-eyebrow">Senioren</p>
-            <h1 id="team-hero-title">2. Mannschaft</h1>
-            <p id="team-hero-intro"></p>
+        <section class="page-hero youth-hero">
+          <div class="page-hero-copy">
+            <p class="eyebrow">Jugend</p>
+            <h1 id="youth-hero-title">Jugendfussball</h1>
+            <p id="youth-hero-intro"></p>
             <div class="hero-actions">
-              <a class="button button-primary" id="team-cta-primary" href="#" target="_blank" rel="noreferrer">Offizielles Profil</a>
-              <a class="button button-ghost" id="team-cta-secondary" href="#">Kontakt</a>
+              <a class="button button-primary" href="index.html#kontakt">Probetraining anfragen</a>
+              <a
+                class="button button-ghost"
+                href="https://www.fussball.de/verein/sv-zweckel-westfalen/-/id/00ES8GN8OC00001OVV0AG08LVUPGND5I"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Offizieller Vereinseintrag
+              </a>
             </div>
-            <p class="form-note" id="team-source-note"></p>
           </div>
-          <div class="team-hero-media">
-            <img id="team-hero-image" src="" alt="" />
+          <div class="page-hero-aside">
+            <img class="youth-hero-image" src="assets/blog_bild_1.webp" alt="Jugend und Vereinsleben beim SV Zweckel" />
           </div>
         </section>
+
         <section class="section-grid">
           <div class="section-heading compact">
-            <p class="eyebrow">Teamdaten</p>
-            <h2>Offizieller Rahmen fuer Tabelle, Heimspielstaette und Wettbewerb</h2>
+            <p class="eyebrow">Schwerpunkte</p>
+            <h2>Warum die Jugend einen eigenen Hub braucht</h2>
           </div>
-          <div class="stats-strip" id="team-stats"></div>
+          <div class="profile-grid" id="youth-values"></div>
         </section>
+
+        <section class="section-grid">
+          <div class="section-heading compact">
+            <p class="eyebrow">Teams</p>
+            <h2>A- bis G-Junioren in einer klaren Struktur</h2>
+            <p>
+              Verifizierte FUSSBALL.DE-Profile sind direkt verlinkt. Fuer die uebrigen Jahrgaenge ist die Portalstruktur bereits so angelegt, dass spaeter Teamseiten daraus entstehen koennen.
+            </p>
+          </div>
+          <div class="profile-grid" id="youth-team-grid"></div>
+        </section>
+
         <section class="team-content-grid">
           <div class="team-content-main">
             <div class="section-heading compact">
-              <p class="eyebrow">Profil</p>
-              <h2>Was diese Teamseite bereits leistet</h2>
+              <p class="eyebrow">Ansprechpartner</p>
+              <h2>Direkte Wege fuer Eltern und Talente</h2>
             </div>
-            <div class="profile-grid detail-summary-grid" id="team-summary"></div>
+            <div class="board-grid" id="youth-contacts"></div>
           </div>
           <aside class="team-content-side">
             <div class="info-panel">
-              <p class="card-kicker">Naechste Spiele</p>
-              <ul class="detail-list" id="team-matches"></ul>
+              <p class="card-kicker">Probetraining</p>
+              <ol class="detail-list detail-list-numbered" id="youth-steps"></ol>
             </div>
           </aside>
         </section>
-        <section class="section-grid">
-          <div class="section-heading compact">
-            <p class="eyebrow">Spielberichte</p>
-            <h2>Letzte sichtbare Meldungen aus dem offiziellen Profil</h2>
-          </div>
-          <div class="news-line-grid" id="team-news"></div>
-        </section>
+
         <section class="section-grid">
           <div class="section-heading compact">
             <p class="eyebrow">Kanaele</p>
-            <h2>Bleib bei Team und Verein direkt dran</h2>
+            <h2>Jugendkommunikation braucht Website und Social zusammen</h2>
           </div>
           <div class="social-grid" id="social-grid"></div>
         </section>
       </main>
+
       <footer class="site-footer">
         <div class="footer-brand">
           <a class="footer-brand-link" href="index.html" aria-label="Zur Startseite">
             <img class="footer-logo" src="assets/svzweckel_logo.jpg" alt="Logo des SV Zweckel" />
             <div>
               <p class="eyebrow">SV Zweckel 23 e. V.</p>
-              <p>Detailseite der 2. Mannschaft auf Basis des gemeinsamen Teamtemplates.</p>
+              <p>Jugendportal fuer Ansprechpartner, Teamstruktur und Probetraining.</p>
             </div>
           </a>
           <div class="footer-socials" aria-label="Social Media Links">
@@ -107,13 +124,13 @@
         <div class="footer-links">
           <a href="index.html">Startseite</a>
           <a href="mannschaften.html">Mannschaften</a>
-          <a href="jugend.html">Jugend</a>
           <a href="news.html">Aktuelles</a>
           <a href="#top">Nach oben</a>
         </div>
       </footer>
     </div>
+
     <script src="data.js"></script>
-    <script src="team-detail.js"></script>
+    <script src="jugend.js"></script>
   </body>
 </html>
