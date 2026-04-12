@@ -994,6 +994,24 @@ textarea {
   margin: 0;
 }
 
+.squad-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.squad-card {
+  padding: 1.1rem 1.2rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.squad-card h3 {
+  margin: 0;
+}
+
 .youth-hero-image {
   width: 100%;
   height: 100%;
@@ -1134,7 +1152,8 @@ textarea {
   .social-grid,
   .profile-grid,
   .profile-stats,
-  .news-line-grid {
+  .news-line-grid,
+  .squad-grid {
     grid-template-columns: 1fr;
   }
 

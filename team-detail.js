@@ -16,6 +16,13 @@ const statsGrid = document.querySelector("#team-stats");
 const summaryGrid = document.querySelector("#team-summary");
 const matchesList = document.querySelector("#team-matches");
 const newsList = document.querySelector("#team-news");
+const coachingGrid = document.querySelector("#team-coaching");
+const trainingTitle = document.querySelector("#team-training-title");
+const trainingNote = document.querySelector("#team-training-note");
+const trainingList = document.querySelector("#team-training-list");
+const squadTitle = document.querySelector("#team-squad-title");
+const squadNote = document.querySelector("#team-squad-note");
+const squadGrid = document.querySelector("#team-squad-grid");
 const primaryCta = document.querySelector("#team-cta-primary");
 const secondaryCta = document.querySelector("#team-cta-secondary");
 const sourceNote = document.querySelector("#team-source-note");
@@ -96,6 +103,43 @@ function renderTeamPage() {
       `
     )
     .join("");
+
+  if (coachingGrid && detail.coaching?.length) {
+    coachingGrid.innerHTML = detail.coaching
+      .map(
+        (item) => `
+          <article class="board-card">
+            <h3>${item.name}</h3>
+            <p class="card-kicker">${item.role}</p>
+            <p>${item.text}</p>
+          </article>
+        `
+      )
+      .join("");
+  }
+
+  if (trainingTitle && trainingNote && trainingList && detail.training) {
+    trainingTitle.textContent = detail.training.title;
+    trainingNote.textContent = detail.training.note;
+    trainingList.innerHTML = detail.training.items
+      .map((item) => `<li class="detail-list-item">${item}</li>`)
+      .join("");
+  }
+
+  if (squadTitle && squadNote && squadGrid && detail.squad) {
+    squadTitle.textContent = detail.squad.title;
+    squadNote.textContent = detail.squad.note;
+    squadGrid.innerHTML = detail.squad.players
+      .map(
+        (player) => `
+          <article class="squad-card">
+            <p class="card-kicker">${player.position}</p>
+            <h3>${player.name}</h3>
+          </article>
+        `
+      )
+      .join("");
+  }
 }
 
 function renderSocialLinks() {

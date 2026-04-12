@@ -614,10 +614,50 @@ window.svzData = {
         primaryUrl:
           "https://www.fussball.de/mannschaft/sv-zweckel-sv-zweckel-westfalen/-/saison/2526/team-id/011MID3BB4000000VTVG0001VTR8C1K7",
         secondaryLabel: "Kontakt zum Verein",
-        secondaryUrl: "index.html#kontakt",
+        secondaryUrl: "service.html#kontakt",
+      },
+      coaching: [
+        {
+          name: "Marc Schaefer",
+          role: "Cheftrainer",
+          text:
+            "Seit dem 25. September 2025 offiziell Cheftrainer der 1. Mannschaft. Zuvor war er viele Jahre beim BV Rentfort aktiv.",
+        },
+      ],
+      training: {
+        title: "Oeffentlich dokumentierte Trainingsfenster",
+        note:
+          "Ein vollstaendiger woechentlicher Trainingsplan ist in den oeffentlich zugaenglichen Quellen nicht eindeutig veroeffentlicht. Dokumentiert sind aber mehrere Dienstagabend-Termine in der Uli-Simon-Arena.",
+        items: [
+          "Dienstag, 1. Juli 2025 | 19:15 Uhr | Start der Sommervorbereitung in der Uli-Simon-Arena",
+          "Freitag, 26. September 2025 | intensive Trainingseinheit vor dem ersten Spiel unter Marc Schaefer",
+          "Dienstag, 27. Januar 2026 | 19:30 Uhr | Wintervorbereitung gegen SV Dorsten-Hardt in der Uli-Simon-Arena",
+        ],
+      },
+      squad: {
+        title: "Sichtbarer Kaderstand 25/26",
+        note:
+          "Die folgende oeffentlich sichtbare Kaderliste basiert auf dem Transfermarkt-Kaderstand fuer die Saison 2025/26. Offizielle Vereinsmeldungen nennen zusaetzlich weitere eingesetzte Spieler in Spielberichten.",
+        players: [
+          { name: "Fabian Matschnigg", position: "Torwart" },
+          { name: "Dominik Bicker", position: "Torwart" },
+          { name: "Yasin Muslubas", position: "Torwart" },
+          { name: "Dario Schierenberg", position: "Torwart" },
+          { name: "David Kulina", position: "Torwart" },
+          { name: "Marvin Schulz", position: "Abwehr" },
+          { name: "Okan Isleyen", position: "Abwehr" },
+          { name: "Patrick Herkt", position: "Abwehr" },
+          { name: "Joshua Denk", position: "Abwehr" },
+          { name: "Muhamed Demir", position: "Innenverteidiger" },
+          { name: "Dincer Kahraman", position: "Mittelfeld" },
+          { name: "Bassam Uygur", position: "Mittelfeld" },
+          { name: "Mohammad Milad Sahebzada", position: "Mittelfeld" },
+          { name: "Saher Ayhan", position: "Sturm" },
+          { name: "Ahmet Cicek", position: "Sturm" },
+        ],
       },
       sourceNote:
-        "Verwendete Teamdaten aus dem offiziellen FUSSBALL.DE-Mannschaftsprofil, abgerufen im April 2026.",
+        "Verwendete Teamdaten aus dem offiziellen FUSSBALL.DE-Mannschaftsprofil sowie Trainer- und Kaderinfos aus oeffentlich sichtbaren Vereins- und Transfermarkt-Seiten, abgerufen im April 2026.",
     },
     "zweite-mannschaft": {
       slug: "zweite-mannschaft",
