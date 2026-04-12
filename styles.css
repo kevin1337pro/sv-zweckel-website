@@ -707,6 +707,10 @@ textarea {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.shop-preview-grid-compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .shop-card,
 .sponsor-panel {
   border-radius: var(--radius-xl);
