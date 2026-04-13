@@ -45,6 +45,10 @@ body {
   overflow-x: hidden;
 }
 
+body.home-page {
+  padding-bottom: 8.5rem;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -288,6 +292,140 @@ textarea {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.58)),
     linear-gradient(140deg, rgba(10, 21, 15, 0.02), rgba(10, 21, 15, 0.55));
+}
+
+.live-matchbar {
+  position: fixed;
+  left: 50%;
+  bottom: 0.85rem;
+  z-index: 30;
+  width: min(1320px, calc(100vw - 1.6rem));
+  transform: translateX(-50%);
+}
+
+.live-matchbar-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 1.05rem;
+  border-radius: 28px;
+  background: rgba(248, 249, 244, 0.96);
+  border: 1px solid rgba(7, 17, 12, 0.08);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.22);
+  color: #0b1710;
+  backdrop-filter: blur(18px);
+}
+
+.live-matchbar-score,
+.live-club,
+.live-matchbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.live-matchbar-score {
+  gap: 1rem;
+  min-width: 0;
+}
+
+.live-club {
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.live-club-home,
+.live-club-away {
+  flex: 1;
+}
+
+.live-club-away {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.live-club-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-soft), var(--brand));
+  color: #041009;
+  font-size: 0.88rem;
+  font-weight: 800;
+  flex: 0 0 auto;
+}
+
+.live-club-mark-away {
+  background: rgba(11, 23, 16, 0.12);
+  color: #0b1710;
+}
+
+.live-club-label {
+  margin: 0 0 0.12rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #4e6254;
+}
+
+.live-club strong,
+.live-score-block strong {
+  display: block;
+  font-size: 1.12rem;
+  line-height: 1.02;
+}
+
+.live-score-block {
+  display: grid;
+  justify-items: center;
+  gap: 0.18rem;
+  padding: 0 0.4rem;
+  flex: 0 0 auto;
+}
+
+.live-status {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4e6254;
+}
+
+.live-score-block strong {
+  font-size: 1.7rem;
+  color: #051109;
+}
+
+.live-matchbar-events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  min-width: 0;
+}
+
+.live-event-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.68rem;
+  border-radius: 999px;
+  background: rgba(11, 23, 16, 0.06);
+  color: #193223;
+  font-size: 0.84rem;
+  white-space: nowrap;
+}
+
+.live-matchbar-links {
+  gap: 0.9rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.live-matchbar-links a {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #0d4022;
+  white-space: nowrap;
 }
 
 .hero-overlay-card {
@@ -1394,31 +1532,16 @@ textarea {
   }
 
   .hero-stage {
-    min-height: auto;
-    overflow: visible;
-    background: transparent;
-    border: 0;
-    backdrop-filter: none;
-    box-shadow: none;
+    min-height: 460px;
   }
 
-  .hero-overlay-card {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: min(72%, 320px);
-    max-width: none;
-    margin: -4.4rem 1rem 0 auto;
+  .live-matchbar-inner {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
   }
 
-  .hero-stage::after {
-    display: none;
-  }
-
-  .hero-stage img {
-    min-height: 360px;
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow);
+  .live-matchbar-links {
+    justify-content: flex-start;
   }
 
   .featured-news-media img {
@@ -1482,32 +1605,26 @@ textarea {
   }
 
   .hero-overlay-card {
-    width: min(calc(100% - 1.6rem), 285px);
-    max-width: none;
-    margin: -3.7rem 0.8rem 0 auto;
-    padding: 0.85rem 0.9rem;
+    display: none;
   }
 
-  .scoreline {
-    grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr);
-    gap: 0.5rem;
+  .live-matchbar {
+    width: min(calc(100vw - 1rem), 100%);
+    bottom: 0.55rem;
   }
 
-  .scoreline strong {
-    max-width: 7.2ch;
-    font-size: clamp(0.88rem, 3.45vw, 1.08rem);
+  .live-matchbar-inner {
+    padding: 0.8rem 0.85rem;
   }
 
-  .score-divider {
-    width: 34px;
-    height: 34px;
-    font-size: 0.86rem;
+  .live-matchbar-score {
+    gap: 0.8rem;
   }
 
-  .overlay-meta {
-    max-width: 19ch;
-    font-size: 0.84rem;
-    line-height: 1.4;
+  .live-club-mark {
+    width: 38px;
+    height: 38px;
+    font-size: 0.8rem;
   }
 
   .hero-copy h1,
@@ -1555,41 +1672,46 @@ textarea {
   }
 
   .hero-stage {
-    min-height: auto;
+    min-height: 400px;
   }
 
-  .scoreline {
-    grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr);
+  body.home-page {
+    padding-bottom: 11.8rem;
+  }
+
+  .live-matchbar {
+    width: calc(100vw - 0.8rem);
+    bottom: 0.4rem;
+  }
+
+  .live-matchbar-inner {
+    gap: 0.7rem;
+    padding: 0.72rem 0.72rem calc(0.72rem + env(safe-area-inset-bottom));
+    border-radius: 24px;
+  }
+
+  .live-matchbar-score {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .live-club {
     gap: 0.45rem;
   }
 
-  .scoreline strong {
-    max-width: 6.8ch;
-    font-size: 0.82rem;
+  .live-club strong {
+    font-size: 0.94rem;
   }
 
-  .club-tag {
-    font-size: 0.62rem;
-    letter-spacing: 0.12em;
-    margin-bottom: 0.2rem;
+  .live-score-block strong {
+    font-size: 1.28rem;
   }
 
-  .hero-overlay-card {
-    width: calc(100% - 1.2rem);
-    max-width: none;
-    margin: -2.9rem 0.6rem 0;
-    padding: 0.75rem 0.8rem;
-  }
-
-  .score-divider {
-    width: 30px;
-    height: 30px;
+  .live-event-chip,
+  .live-matchbar-links a {
     font-size: 0.78rem;
-  }
-
-  .overlay-meta {
-    max-width: none;
-    font-size: 0.82rem;
   }
 
   .info-panel {

@@ -12,7 +12,7 @@
     <link rel="preload" href="assets/svzweckel_logo.jpg" as="image" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="home-page">
     <div class="site-shell">
       <header class="site-header" id="top">
         <div class="brand-lockup">
@@ -88,25 +88,6 @@
               src="assets/header_bild_1.webp"
               alt="Stimmungsbild des SV Zweckel"
             />
-            <div class="hero-overlay-card">
-              <p class="card-kicker">Matchcenter Demo</p>
-              <div class="scoreline">
-                <div class="scoreline-team scoreline-team-home">
-                  <p class="club-tag">SV Zweckel</p>
-                  <strong>Heimspieltag</strong>
-                </div>
-                <span class="score-divider">vs</span>
-                <div class="scoreline-team scoreline-team-away">
-                  <p class="club-tag">Gast</p>
-                  <strong>Ligagegner</strong>
-                </div>
-              </div>
-              <p class="overlay-meta">
-                Uli-Simon-Arena, Gladbeck<br />
-                Spielplan und Ergebnisse koennen spaeter dynamisch angebunden
-                werden.
-              </p>
-            </div>
           </div>
         </section>
 
@@ -562,6 +543,46 @@
         </div>
       </footer>
     </div>
+
+    <aside class="live-matchbar" aria-label="Live Ergebnisse und Ereignisse">
+      <div class="live-matchbar-inner">
+        <div class="live-matchbar-score">
+          <div class="live-club live-club-home">
+            <span class="live-club-mark">SVZ</span>
+            <div>
+              <p class="live-club-label">Heim</p>
+              <strong>SV Zweckel</strong>
+            </div>
+          </div>
+
+          <div class="live-score-block">
+            <span class="live-status">Live Demo | 84'</span>
+            <strong>2:1</strong>
+          </div>
+
+          <div class="live-club live-club-away">
+            <div>
+              <p class="live-club-label">Gast</p>
+              <strong>Ligagegner</strong>
+            </div>
+            <span class="live-club-mark live-club-mark-away">G</span>
+          </div>
+        </div>
+
+        <div class="live-matchbar-events">
+          <span class="live-event-chip">12' 0:1 Rueckstand</span>
+          <span class="live-event-chip">35' Cicek zum 1:1</span>
+          <span class="live-event-chip">78' Waldner trifft zum 2:1</span>
+        </div>
+
+        <div class="live-matchbar-links">
+          <a href="mannschaften.html">Spieltag</a>
+          <a href="news.html">Ereignisse</a>
+          <a href="erste-mannschaft.html">1. Mannschaft</a>
+          <a href="mannschaften.html">Tabelle</a>
+        </div>
+      </div>
+    </aside>
 
     <script src="data.js"></script>
     <script src="script.js"></script>
