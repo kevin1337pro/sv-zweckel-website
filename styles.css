@@ -306,23 +306,37 @@ textarea {
 
 .scoreline {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
-  align-items: center;
-  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr);
+  align-items: start;
+  gap: 0.55rem;
 }
 
-.scoreline > div {
+.scoreline-team {
+  display: grid;
+  gap: 0.12rem;
   min-width: 0;
 }
 
-.scoreline > div:last-child {
+.scoreline-team-home {
+  text-align: left;
+}
+
+.scoreline-team-away {
   text-align: right;
+  justify-items: end;
+}
+
+.scoreline-team .club-tag {
+  margin-bottom: 0;
 }
 
 .scoreline strong {
   display: block;
-  font-size: clamp(1rem, 1.35vw, 1.35rem);
-  line-height: 1.05;
+  max-width: 8.4ch;
+  font-size: clamp(0.92rem, 1.22vw, 1.22rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
 }
 
 .score-divider {
@@ -335,6 +349,7 @@ textarea {
   color: var(--accent);
   font-weight: 700;
   font-size: 0.82rem;
+  align-self: center;
 }
 
 .overlay-meta {
@@ -1473,8 +1488,14 @@ textarea {
     padding: 0.85rem 0.9rem;
   }
 
+  .scoreline {
+    grid-template-columns: minmax(0, 1fr) 34px minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+
   .scoreline strong {
-    font-size: clamp(0.94rem, 3.8vw, 1.18rem);
+    max-width: 7.2ch;
+    font-size: clamp(0.88rem, 3.45vw, 1.08rem);
   }
 
   .score-divider {
@@ -1538,11 +1559,13 @@ textarea {
   }
 
   .scoreline {
-    gap: 0.6rem;
+    grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr);
+    gap: 0.45rem;
   }
 
   .scoreline strong {
-    font-size: 0.9rem;
+    max-width: 6.8ch;
+    font-size: 0.82rem;
   }
 
   .club-tag {
