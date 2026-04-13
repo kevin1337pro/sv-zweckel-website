@@ -546,29 +546,42 @@
 
     <aside class="live-matchbar" aria-label="Live Ergebnisse und Ereignisse">
       <div class="live-matchbar-inner">
-        <div class="live-matchbar-score">
-          <div class="live-club live-club-home">
-            <span class="live-club-mark">SVZ</span>
-            <div>
-              <p class="live-club-label">Heim</p>
-              <strong>SV Zweckel</strong>
+        <div class="live-matchbar-primary">
+          <div class="live-matchbar-score">
+            <div class="live-club live-club-home">
+              <span class="live-club-mark">SVZ</span>
+              <div>
+                <p class="live-club-label">Heim</p>
+                <strong>SV Zweckel</strong>
+              </div>
+            </div>
+
+            <div class="live-score-block">
+              <span class="live-status">Live Demo | 84'</span>
+              <strong>2:1</strong>
+            </div>
+
+            <div class="live-club live-club-away">
+              <div>
+                <p class="live-club-label">Gast</p>
+                <strong>Ligagegner</strong>
+              </div>
+              <span class="live-club-mark live-club-mark-away">G</span>
             </div>
           </div>
 
-          <div class="live-score-block">
-            <span class="live-status">Live Demo | 84'</span>
-            <strong>2:1</strong>
-          </div>
-
-          <div class="live-club live-club-away">
-            <div>
-              <p class="live-club-label">Gast</p>
-              <strong>Ligagegner</strong>
-            </div>
-            <span class="live-club-mark live-club-mark-away">G</span>
-          </div>
+          <button
+            class="live-matchbar-toggle"
+            type="button"
+            aria-expanded="true"
+            aria-controls="live-matchbar-extra"
+            aria-label="Live-Leiste ein- oder ausklappen"
+          >
+            <span class="live-matchbar-toggle-icon" aria-hidden="true"></span>
+          </button>
         </div>
 
+        <div class="live-matchbar-extra" id="live-matchbar-extra">
         <div class="live-matchbar-events">
           <span class="live-event-chip">12' 0:1 Rueckstand</span>
           <span class="live-event-chip">35' Cicek zum 1:1</span>
@@ -580,6 +593,7 @@
           <a href="news.html">Ereignisse</a>
           <a href="erste-mannschaft.html">1. Mannschaft</a>
           <a href="mannschaften.html">Tabelle</a>
+        </div>
         </div>
       </div>
     </aside>

@@ -20,6 +20,9 @@ const navToggle = document.querySelector(".nav-toggle");
 const primaryNav = document.querySelector("#primary-nav");
 const searchInput = document.querySelector("#site-search");
 const contactForm = document.querySelector(".contact-form");
+const liveMatchbar = document.querySelector(".live-matchbar");
+const liveMatchbarToggle = document.querySelector(".live-matchbar-toggle");
+const mobileLiveMatchbar = window.matchMedia("(max-width: 560px)");
 
 function renderNews() {
   if (!newsGrid) {
@@ -223,6 +226,48 @@ function bindFormDemo() {
   });
 }
 
+function setLiveMatchbarState(collapsed) {
+  if (!liveMatchbar || !liveMatchbarToggle) {
+    return;
+  }
+
+  liveMatchbar.classList.toggle("is-collapsed", collapsed);
+  document.body.classList.toggle("live-matchbar-collapsed", collapsed);
+  liveMatchbarToggle.setAttribute("aria-expanded", String(!collapsed));
+}
+
+function syncLiveMatchbarToViewport() {
+  if (!liveMatchbar || !liveMatchbarToggle) {
+    return;
+  }
+
+  if (mobileLiveMatchbar.matches) {
+    setLiveMatchbarState(true);
+    return;
+  }
+
+  setLiveMatchbarState(false);
+}
+
+function bindLiveMatchbar() {
+  if (!liveMatchbar || !liveMatchbarToggle) {
+    return;
+  }
+
+  syncLiveMatchbarToViewport();
+
+  liveMatchbarToggle.addEventListener("click", () => {
+    if (!mobileLiveMatchbar.matches) {
+      return;
+    }
+
+    const collapsed = liveMatchbar.classList.contains("is-collapsed");
+    setLiveMatchbarState(!collapsed);
+  });
+
+  mobileLiveMatchbar.addEventListener("change", syncLiveMatchbarToViewport);
+}
+
 renderNews();
 renderQuicklinks();
 renderTeams();
@@ -233,3 +278,4 @@ renderOfficialMeta();
 bindNavigation();
 bindSearch();
 bindFormDemo();
+bindLiveMatchbar();
