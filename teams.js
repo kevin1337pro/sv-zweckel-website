@@ -42,7 +42,7 @@ function renderClubSummary() {
       target="_blank"
       rel="noreferrer"
     >
-      Offiziellen Vereinseintrag oeffnen
+      Offiziellen Vereinseintrag öffnen
     </a>
     <p class="form-note">${clubMeta.standLabel}</p>
   `;

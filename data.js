@@ -1,7 +1,7 @@
 window.svzData = {
   clubMeta: {
     founded: "1923",
-    colors: "schwarz-gruen",
+    colors: "schwarz-grün",
     association: "Fussball- und Leichtathletik-Verband Westfalen",
     address: "Dorstener Str. 43, 45966 Gladbeck",
     officialWebsite: "https://www.svzweckel.de",
@@ -18,27 +18,27 @@ window.svzData = {
       handle: "@svzweckel23",
       url: "https://www.instagram.com/svzweckel23/",
       description:
-        "Bilder, Vereinsleben und Spieltagsstimmung fuer Fans und Mitglieder.",
+        "Bilder, Vereinsleben und Spieltagsstimmung für Fans und Mitglieder.",
     },
     {
       name: "TikTok",
       handle: "@sv_zweckel_23",
       url: "https://www.tiktok.com/@sv_zweckel_23/",
       description:
-        "Kurze Clips, Behind-the-Scenes und moderne Reichweite fuer den Verein.",
+        "Kurze Clips, Behind-the-Scenes und moderne Reichweite für den Verein.",
     },
     {
       name: "WhatsApp",
       handle: "Kanal",
       url: "https://whatsapp.com/channel/0029VbCXFjVKbYML54DEDv0Q",
       description:
-        "Direkter Kanal fuer Vereinsupdates und schnelle Kommunikation auf dem Handy.",
+        "Direkter Kanal für Vereinsupdates und schnelle Kommunikation auf dem Handy.",
     },
   ],
   membershipPortal: {
     heroTitle: "Mitglied werden und den Verein aktiv mittragen",
     intro:
-      "Die neue Mitgliedschaftsseite fuehrt Interessenten klar durch Nutzen, Ablauf und die spaetere Formularstrecke. Sie ist bewusst so aufgebaut, dass echte PDFs und Online-Formulare spaeter ohne Strukturbruch eingebunden werden koennen.",
+      "Die neue Mitgliedschaftsseite führt Interessenten klar durch Nutzen, Ablauf und die spätere Formularstrecke. Sie ist bewusst so aufgebaut, dass echte PDFs und Online-Formulare später ohne Strukturbruch eingebunden werden können.",
     benefits: [
       {
         title: "Teil einer starken Vereinsgemeinschaft",
@@ -46,20 +46,20 @@ window.svzData = {
           "Mitgliedschaft bedeutet mehr als Spielbetrieb: sie verbindet Mannschaften, Jugend, Ehrenamt, Vereinsleben und lokale Verwurzelung.",
       },
       {
-        title: "Klare Wege fuer Familien und Spieler",
+        title: "Klare Wege für Familien und Spieler",
         text:
-          "Ob Jugend, Herren, Walking Football oder Foerderinteresse: die Seite soll den passenden Einstieg ohne Umwege bieten.",
+          "Ob Jugend, Herren, Walking Football oder Förderinteresse: die Seite soll den passenden Einstieg ohne Umwege bieten.",
       },
       {
         title: "Saubere Conversion statt PDF-Friedhof",
         text:
-          "Die kuenftige Version kann Mitgliedsantrag, Datenschutz-Hinweise und Beitragsinfos sichtbar und nachvollziehbar ausliefern.",
+          "Die künftige Version kann Mitgliedsantrag, Datenschutz-Hinweise und Beitragsinfos sichtbar und nachvollziehbar ausliefern.",
       },
     ],
     process: [
-      "Passenden Einstieg waehlen: Jugend, Herren, Breitensport oder Foerdermitgliedschaft",
-      "Mitgliedschaft oder Probetraining ueber das Kontaktformular anfragen",
-      "Vereinsrueckmeldung und weitere Unterlagen erhalten",
+      "Passenden Einstieg wählen: Jugend, Herren, Breitensport oder Fördermitgliedschaft",
+      "Mitgliedschaft oder Probetraining über das Kontaktformular anfragen",
+      "Vereinsrückmeldung und weitere Unterlagen erhalten",
       "Beitritt oder Einstieg final abstimmen",
     ],
     documents: [
@@ -67,40 +67,40 @@ window.svzData = {
         title: "Mitgliedsantrag",
         status: "Als Downloadbereich vorgesehen",
         text:
-          "Der bestehende Antrag von der Altseite wird hier spaeter als klar sichtbarer PDF-Download eingebunden.",
+          "Der bestehende Antrag von der Altseite wird hier später als klar sichtbarer PDF-Download eingebunden.",
       },
       {
         title: "Datenschutz-Hinweise",
         status: "Als Downloadbereich vorgesehen",
         text:
-          "DSGVO-relevante Hinweise und Formulare werden zusammen mit dem Antrag gebuendelt dargestellt.",
+          "DSGVO-relevante Hinweise und Formulare werden zusammen mit dem Antrag gebündelt dargestellt.",
       },
       {
         title: "Satzung und Vereinsinfos",
         status: "Als Downloadbereich vorgesehen",
         text:
-          "Satzung, Vereinslied oder 100-Jahre-Inhalte koennen von hier aus zentral erreichbar gemacht werden.",
+          "Satzung, Vereinslied oder 100-Jahre-Inhalte können von hier aus zentral erreichbar gemacht werden.",
       },
     ],
     options: [
       {
         title: "Jugend & Probetraining",
         text:
-          "Ideal fuer Eltern und Talente, die zunaechst einen sportlichen Einstieg suchen und erst danach ueber die feste Mitgliedschaft entscheiden.",
+          "Ideal für Eltern und Talente, die zunächst einen sportlichen Einstieg suchen und erst danach über die feste Mitgliedschaft entscheiden.",
         url: "jugend.html",
         label: "Zum Jugendportal",
       },
       {
         title: "Herrenbereich",
         text:
-          "Geeignet fuer Spieler, Rueckkehrer oder Interessierte, die direkt den Weg in den aktiven Seniorenbereich suchen.",
+          "Geeignet für Spieler, Rückkehrer oder Interessierte, die direkt den Weg in den aktiven Seniorenbereich suchen.",
         url: "mannschaften.html",
         label: "Zu den Mannschaften",
       },
       {
         title: "Direkte Anfrage",
         text:
-          "Wenn noch unklar ist, welcher Einstieg passt, fuehrt die Seite direkt in den Kontaktbereich des Vereins.",
+          "Wenn noch unklar ist, welcher Einstieg passt, führt die Seite direkt in den Kontaktbereich des Vereins.",
         url: "service.html#kontakt",
         label: "Kontakt aufnehmen",
       },
@@ -109,12 +109,12 @@ window.svzData = {
   servicePortal: {
     heroTitle: "Fans, Service und Vereinsalltag an einem Ort",
     intro:
-      "Diese Seite buendelt die praktischen Dinge, die auf klassischen Vereinsseiten oft verstreut sind: Anfahrt, Platzinfos, Downloads, Sponsoring und direkte Kontaktwege.",
+      "Diese Seite bündelt die praktischen Dinge, die auf klassischen Vereinsseiten oft verstreut sind: Anfahrt, Platzinfos, Downloads, Sponsoring und direkte Kontaktwege.",
     accessCards: [
       {
         title: "Anfahrt",
         text:
-          "SV Zweckel 23 e. V., Dorstener Str. 43, 45966 Gladbeck. Die Heimspielstaette ist der Kunstrasenplatz an der Dorstener Strasse.",
+          "SV Zweckel 23 e. V., Dorstener Str. 43, 45966 Gladbeck. Die Heimspielstätte ist der Kunstrasenplatz an der Dorstener Strasse.",
       },
       {
         title: "Schneller Kontakt",
@@ -124,30 +124,30 @@ window.svzData = {
       {
         title: "Offizielle Vereinsdaten",
         text:
-          "FUSSBALL.DE und die Vereinsseite bilden zusammen die verbindliche Basis fuer Spielbetrieb und Teamstruktur.",
+          "FUSSBALL.DE und die Vereinsseite bilden zusammen die verbindliche Basis für Spielbetrieb und Teamstruktur.",
       },
     ],
     serviceBlocks: [
       {
         title: "Downloads",
         text:
-          "Mitgliedsantrag, Datenschutz-Hinweise und Satzung werden hier spaeter als zentraler Downloadbereich ausgespielt.",
+          "Mitgliedsantrag, Datenschutz-Hinweise und Satzung werden hier später als zentraler Downloadbereich ausgespielt.",
       },
       {
         title: "Sponsoring",
         text:
-          "Lokale Partner sollen sichtbar auf eine eigene Sponsorendarstellung, Reichweite und Kontaktfuehrung treffen.",
+          "Lokale Partner sollen sichtbar auf eine eigene Sponsorendarstellung, Reichweite und Kontaktführung treffen.",
       },
       {
         title: "Spieltag & Service",
         text:
-          "Anfahrt, Platzhinweise, wichtige Vereinsinfos und kuenftige Eventmodule gehoeren auf dieselbe Serviceebene.",
+          "Anfahrt, Platzhinweise, wichtige Vereinsinfos und künftige Eventmodule gehören auf dieselbe Serviceebene.",
       },
     ],
     sponsorReasons: [
       "Lokale Sichtbarkeit rund um Verein, Spieltage und Jugend",
-      "Klare Platzierung auf Website, News und kuenftigem Sponsorensegment",
-      "Direkter Kontakt fuer individuelle Partnerschaften",
+      "Klare Platzierung auf Website, News und künftigem Sponsorensegment",
+      "Direkter Kontakt für individuelle Partnerschaften",
     ],
     contacts: [
       {
@@ -168,24 +168,24 @@ window.svzData = {
     ],
   },
   youthPortal: {
-    heroTitle: "Jugendfussball mit klarem Einstieg fuer Eltern, Talente und Trainer",
+    heroTitle: "Jugendfussball mit klarem Einstieg für Eltern, Talente und Trainer",
     intro:
       "Die Jugend ist einer der wichtigsten Wachstumsbereiche des Vereins. Deshalb bekommt sie hier einen eigenen, serviceorientierten Hub mit Teamlogik, Ansprechpartnern, Probetraining und verifizierten FUSSBALL.DE-Daten.",
     values: [
       {
-        title: "Klare Wege fuer Eltern",
+        title: "Klare Wege für Eltern",
         text:
-          "Statt verstreuter Menuepunkte werden Ansprechpartner, Teamstruktur und der Weg zum Probetraining an einem Ort gebuendelt.",
+          "Statt verstreuter Menüpunkte werden Ansprechpartner, Teamstruktur und der Weg zum Probetraining an einem Ort gebündelt.",
       },
       {
-        title: "Sichtbarkeit fuer alle Jahrgaenge",
+        title: "Sichtbarkeit für alle Jahrgänge",
         text:
-          "A- bis G-Junioren bekommen einen wertigen Rahmen. Leistungsdaten werden dort eingebunden, wo offizielle Profile verfuegbar sind.",
+          "A- bis G-Junioren bekommen einen wertigen Rahmen. Leistungsdaten werden dort eingebunden, wo offizielle Profile verfügbar sind.",
       },
       {
-        title: "Pflegeleicht fuer den Verein",
+        title: "Pflegeleicht für den Verein",
         text:
-          "Die Jugendseite ist so angelegt, dass Teamkontakte, Trainingszeiten und News spaeter direkt aus einem CMS oder Datenmodell gepflegt werden koennen.",
+          "Die Jugendseite ist so angelegt, dass Teamkontakte, Trainingszeiten und News später direkt aus einem CMS oder Datenmodell gepflegt werden können.",
       },
     ],
     contacts: [
@@ -195,16 +195,16 @@ window.svzData = {
       },
       {
         name: "Rene Schweikl",
-        role: "Jugendgeschaeftsfuehrer",
+        role: "Jugendgeschäftsführer",
       },
       {
         name: "Max Scharmacher",
-        role: "Oeffentlichkeitsarbeit",
+        role: "Öffentlichkeitsarbeit",
       },
     ],
     steps: [
       "Passendes Jugendteam identifizieren",
-      "Kontakt ueber Vereinsseite oder Jugendleitung aufnehmen",
+      "Kontakt über Vereinsseite oder Jugendleitung aufnehmen",
       "Probetraining abstimmen",
       "Danach Teamseite, Trainingszeiten und weitere Infos erhalten",
     ],
@@ -214,14 +214,14 @@ window.svzData = {
       name: "A-Junioren",
       stage: "Leistungsnahe Endstufe",
       summary:
-        "Der aelteste Nachwuchsbereich ist die Bruecke zwischen Jugendfussball und Herrenbereich.",
-      status: "Strukturell eingeplant fuer eigene Teamseite",
+        "Der älteste Nachwuchsbereich ist die Brücke zwischen Jugendfussball und Herrenbereich.",
+      status: "Strukturell eingeplant für eigene Teamseite",
     },
     {
       name: "B-Junioren",
       stage: "Aufbaubereich",
       summary:
-        "Verifiziertes offizielles Profil mit Tabellenstand, Torbilanz und naechstem Spiel.",
+        "Verifiziertes offizielles Profil mit Tabellenstand, Torbilanz und nächstem Spiel.",
       status: "KJL B B-Jugend | 6. Platz | 13 Punkte | 39:23 Tore",
       profileUrl:
         "https://www.fussball.de/mannschaft/sv-zweckel-23-sv-zweckel-westfalen/-/saison/2526/team-id/02M9D1KKGK000000VS5489B1VV4JLPLE",
@@ -239,29 +239,29 @@ window.svzData = {
       name: "D-Junioren",
       stage: "Entwicklungsbereich",
       summary:
-        "Wichtige Phase fuer technische Entwicklung, Bindung an den Verein und strukturierte Trainerkommunikation.",
-      status: "Portal vorgesehen fuer Trainingszeiten und Ansprechpartner",
+        "Wichtige Phase für technische Entwicklung, Bindung an den Verein und strukturierte Trainerkommunikation.",
+      status: "Portal vorgesehen für Trainingszeiten und Ansprechpartner",
     },
     {
       name: "E-Junioren",
       stage: "Entwicklungsbereich",
       summary:
-        "Ideal fuer familienfreundliche Teamseiten mit klarer Kontaktfuehrung und Eventhinweisen.",
-      status: "Portal vorgesehen fuer Trainingszeiten und Ansprechpartner",
+        "Ideal für familienfreundliche Teamseiten mit klarer Kontaktführung und Eventhinweisen.",
+      status: "Portal vorgesehen für Trainingszeiten und Ansprechpartner",
     },
     {
       name: "F-Junioren",
-      stage: "Frueher Aufbau",
+      stage: "Früher Aufbau",
       summary:
         "Niedrigschwellige Inhalte, Trainerkontakte und ein sichtbarer Probetraining-CTA sind hier besonders wichtig.",
-      status: "Portal vorgesehen fuer Einstieg und Kontakt",
+      status: "Portal vorgesehen für Einstieg und Kontakt",
     },
     {
       name: "G-Junioren",
       stage: "Bambini / Einstieg",
       summary:
-        "Der erste Beruehrungspunkt fuer Familien mit dem Verein. Die Website muss hier maximale Klarheit liefern.",
-      status: "Portal vorgesehen fuer Einstieg und Kontakt",
+        "Der erste Berührungspunkt für Familien mit dem Verein. Die Website muss hier maximale Klarheit liefern.",
+      status: "Portal vorgesehen für Einstieg und Kontakt",
     },
   ],
   newsItems: [
@@ -275,7 +275,7 @@ window.svzData = {
       excerpt:
         "Die neue Website macht aus dem Spieltag einen klar sichtbaren Einstieg mit Vorschau, Ergebnis und Nachbericht auf derselben redaktionellen Linie.",
       body:
-        "Dieses Format steht fuer genau die Art von Vereinskommunikation, die auf der neuen Seite dominant sein soll: ein starkes Titelbild, eine klare Ergebnis- oder Vorschau-Logik und direkte Einstiege in Spielplan, Kader und Vereinsleben.",
+        "Dieses Format steht für genau die Art von Vereinskommunikation, die auf der neuen Seite dominant sein soll: ein starkes Titelbild, eine klare Ergebnis- oder Vorschau-Logik und direkte Einstiege in Spielplan, Kader und Vereinsleben.",
       image: "assets/header_bild_1.webp",
       alt: "Spieltagsszene des SV Zweckel",
       featured: true,
@@ -288,11 +288,11 @@ window.svzData = {
       date: "10. April 2026",
       author: "Jugendabteilung",
       excerpt:
-        "A- bis G-Junioren, Ansprechpartner, Trainingszeiten und Probetraining werden kuenftig in einem eigenen Jugendbereich gebuendelt.",
+        "A- bis G-Junioren, Ansprechpartner, Trainingszeiten und Probetraining werden künftig in einem eigenen Jugendbereich gebündelt.",
       body:
-        "Der Nachwuchs darf auf der neuen Website nicht nur ein Unterpunkt bleiben. Deshalb wird die Jugend mit einer eigenen Landingpage, sauberer Teamlogik und sichtbaren Kontaktpunkten fuer Eltern und Talente aufgebaut.",
+        "Der Nachwuchs darf auf der neuen Website nicht nur ein Unterpunkt bleiben. Deshalb wird die Jugend mit einer eigenen Landingpage, sauberer Teamlogik und sichtbaren Kontaktpunkten für Eltern und Talente aufgebaut.",
       image: "assets/blog_bild_1.webp",
-      alt: "Vereinsbild fuer Jugend und Vereinsleben",
+      alt: "Vereinsbild für Jugend und Vereinsleben",
       featured: false,
     },
     {
@@ -305,7 +305,7 @@ window.svzData = {
       excerpt:
         "Mitgliedschaft, Sponsoring, Kontakt und Downloads erhalten auf der neuen Seite eine gemeinsame Serviceebene statt versteckter Einzelrubriken.",
       body:
-        "Der Verein hat bereits zahlreiche Inhalte, aber sie sind bislang zu wenig orchestriert. Die neue Website macht daraus klare Einstiege mit konkreten Handlungsoptionen fuer Interessenten und Partner.",
+        "Der Verein hat bereits zahlreiche Inhalte, aber sie sind bislang zu wenig orchestriert. Die neue Website macht daraus klare Einstiege mit konkreten Handlungsoptionen für Interessenten und Partner.",
       image: "assets/sv_zweckel_banner.jpg",
       alt: "Banner des SV Zweckel",
       featured: false,
@@ -318,11 +318,11 @@ window.svzData = {
       date: "5. April 2026",
       author: "SV Zweckel Redaktion",
       excerpt:
-        "Jede Mannschaft bekommt kuenftig ihren eigenen Auftritt mit Trainerinfos, Trainingszeiten, Spielplan, Tabelle und News.",
+        "Jede Mannschaft bekommt künftig ihren eigenen Auftritt mit Trainerinfos, Trainingszeiten, Spielplan, Tabelle und News.",
       body:
-        "Statt nur Kategorien mit Spielberichten zu befuellen, bildet die neue Architektur jedes Team als eigene Seite ab. Das macht die Pflege konsistent und verbessert die Orientierung fuer Spieler, Eltern und Fans.",
+        "Statt nur Kategorien mit Spielberichten zu befüllen, bildet die neue Architektur jedes Team als eigene Seite ab. Das macht die Pflege konsistent und verbessert die Orientierung für Spieler, Eltern und Fans.",
       image: "assets/header_bild_1.webp",
-      alt: "Stimmungsbild vom Vereinsgelaende",
+      alt: "Stimmungsbild vom Vereinsgelände",
       featured: false,
     },
     {
@@ -331,11 +331,11 @@ window.svzData = {
       category: "Verein",
       team: "Historie",
       date: "2. April 2026",
-      author: "Oeffentlichkeitsarbeit",
+      author: "Öffentlichkeitsarbeit",
       excerpt:
         "Die Vereinsgeschichte wird nicht mehr als langer Textblock gedacht, sondern als scrollbare Timeline mit klaren Meilensteinen.",
       body:
-        "Gerade fuer einen lokal verankerten Verein wie den SV Zweckel ist Geschichte ein staerker Identitaetstraeger. Die neue Website nutzt diese historische Tiefe bewusst als gestalterisches und inhaltliches Element.",
+        "Gerade für einen lokal verankerten Verein wie den SV Zweckel ist Geschichte ein stärker Identitätsträger. Die neue Website nutzt diese historische Tiefe bewusst als gestalterisches und inhaltliches Element.",
       image: "assets/blog_bild_1.webp",
       alt: "Vereinsleben beim SV Zweckel",
       featured: false,
@@ -345,12 +345,12 @@ window.svzData = {
       title: "News-Archiv mit Kategorien und Suchfilter",
       category: "Aktuelles",
       team: "Redaktion",
-      date: "31. Maerz 2026",
+      date: "31. März 2026",
       author: "SV Zweckel Redaktion",
       excerpt:
         "Die News-Seite wird als echtes Archiv mit Kategorien, visuellen Cards und Suchfilter aufgebaut statt als einfache Listenansicht.",
       body:
-        "Fuer die weitere Entwicklung bedeutet das: neue Meldungen koennen spaeter unkompliziert nach Bereichen wie Herren, Jugend, Verein oder Service sortiert und auf mehreren Seiten ausgespielt werden.",
+        "Für die weitere Entwicklung bedeutet das: neue Meldungen können später unkompliziert nach Bereichen wie Herren, Jugend, Verein oder Service sortiert und auf mehreren Seiten ausgespielt werden.",
       image: "assets/sv_zweckel_banner.jpg",
       alt: "SV Zweckel Banner",
       featured: false,
@@ -359,7 +359,7 @@ window.svzData = {
   quicklinks: [
     {
       title: "Mitglied werden",
-      text: "Klare Conversion-Strecke fuer Beitritt, Formulare und Ansprechpartner.",
+      text: "Klare Conversion-Strecke für Beitritt, Formulare und Ansprechpartner.",
       url: "mitgliedschaft.html",
     },
     {
@@ -369,12 +369,12 @@ window.svzData = {
     },
     {
       title: "Spielplan",
-      text: "Vorbereitet fuer die spaetere Einbindung von Tabellen und Live-Daten.",
+      text: "Vorbereitet für die spätere Einbindung von Tabellen und Live-Daten.",
       url: "mannschaften.html",
     },
     {
       title: "Sponsoring",
-      text: "Eigener Einstieg fuer lokale Partner, Leistungen und Kontaktpunkte.",
+      text: "Eigener Einstieg für lokale Partner, Leistungen und Kontaktpunkte.",
       url: "service.html",
     },
   ],
@@ -383,7 +383,7 @@ window.svzData = {
       name: "1. Mannschaft",
       group: "Senioren",
       summary:
-        "Top-Landingpage fuer Spielberichte, Kader, Spielplan, Tabelle und Heimspiel-Kommunikation.",
+        "Top-Landingpage für Spielberichte, Kader, Spielplan, Tabelle und Heimspiel-Kommunikation.",
       rhythm: "Trainingszeiten als CMS-Feld",
       contact: "Ansprechpartner als Teammodul",
     },
@@ -391,7 +391,7 @@ window.svzData = {
       name: "2. Mannschaft",
       group: "Senioren",
       summary:
-        "Die Mannschaft wird sichtbar ueber aktuelle Meldungen, Tabellenlage und feste Kontaktwege praesentiert.",
+        "Die Mannschaft wird sichtbar über aktuelle Meldungen, Tabellenlage und feste Kontaktwege präsentiert.",
       rhythm: "Wiederverwendbares Teamtemplate",
       contact: "Trainer und Betreuer prominent",
     },
@@ -399,23 +399,23 @@ window.svzData = {
       name: "3. Mannschaft",
       group: "Senioren",
       summary:
-        "Heimspieltage, Teamnews und Serviceinfos koennen eigenstaendig gepflegt und auf der Startseite gefeatured werden.",
+        "Heimspieltage, Teamnews und Serviceinfos können eigenständig gepflegt und auf der Startseite gefeatured werden.",
       rhythm: "News-Feed pro Team",
-      contact: "CTA fuer Teamkontakt",
+      contact: "CTA für Teamkontakt",
     },
     {
       name: "Alte Herren",
       group: "Tradition",
       summary:
-        "Die Mannschaft bekommt eine eigenstaendige Buehne mit Spielterminen, Ansprechpartnern und Vereinsleben.",
+        "Die Mannschaft bekommt eine eigenständige Bühne mit Spielterminen, Ansprechpartnern und Vereinsleben.",
       rhythm: "Kalender- oder Terminmodul",
-      contact: "Kontakt fuer Mitspieler",
+      contact: "Kontakt für Mitspieler",
     },
     {
       name: "Walking Football",
       group: "Breitensport",
       summary:
-        "Das Format eignet sich ideal fuer einen inklusiven, serviceorientierten Auftritt mit niedrigschwelliger Anfrage.",
+        "Das Format eignet sich ideal für einen inklusiven, serviceorientierten Auftritt mit niedrigschwelliger Anfrage.",
       rhythm: "Trainings- und Einstiegshinweise",
       contact: "Probetraining und Kontakt",
     },
@@ -478,7 +478,7 @@ window.svzData = {
         "https://www.fussball.de/mannschaft/sv-zweckel-iii-sv-zweckel-westfalen/-/saison/2526/team-id/02TAD0OP7G000000VS5489BSVV9JRPRB",
       detailUrl: "dritte-mannschaft.html",
       note:
-        "Gute Grundlage fuer eine kuenftige Teamseite mit News, Spielplan und Ansprechpartnern.",
+        "Gute Grundlage für eine künftige Teamseite mit News, Spielplan und Ansprechpartnern.",
     },
     {
       name: "Walking Football",
@@ -488,7 +488,7 @@ window.svzData = {
       position: "ohne klassischen Ligabetrieb",
       points: "Fokus auf Teilnahme und Vereinsangebot",
       goalDiff: "kein klassischer Tabellenwert",
-      nextMatch: "Termine und Spielorte ueber das offizielle Profil pflegbar",
+      nextMatch: "Termine und Spielorte über das offizielle Profil pflegbar",
       pitch: "Dorstener Strasse (Kunstrasen), Dorstener Str. 43, 45966 Gladbeck",
       fussballUrl:
         "https://www.fussball.de/mannschaft/sv-zweckel-sv-zweckel-westfalen/-/saison/2526/team-id/02TAD1HH34000000VS5489BSVV9JRPRB",
@@ -524,7 +524,7 @@ window.svzData = {
       fussballUrl:
         "https://www.fussball.de/mannschaft/sv-zweckel-sv-zweckel-westfalen/-/saison/2526/team-id/011MIAFTU0000000VTVG0001VTR8C1K7",
       note:
-        "Die C-Junioren sind ein guter Pilot fuer eine detailreiche Jugend-Landingpage.",
+        "Die C-Junioren sind ein guter Pilot für eine detailreiche Jugend-Landingpage.",
     },
   ],
   teamDetails: {
@@ -534,7 +534,7 @@ window.svzData = {
       label: "Senioren | Bezirksliga",
       heroTitle: "Die 1. Mannschaft als sportlicher Taktgeber des neuen Portals",
       intro:
-        "Diese Seite ist das erste echte Detailtemplate der neuen Website. Sie zeigt, wie ein Team kuenftig mit Tabelle, Spielplan, Spielberichten, Vereinsstory und offiziellen Daten praesentiert wird.",
+        "Diese Seite ist das erste echte Detailtemplate der neuen Website. Sie zeigt, wie ein Team künftig mit Tabelle, Spielplan, Spielberichten, Vereinsstory und offiziellen Daten präsentiert wird.",
       heroImage: "assets/header_bild_1.webp",
       heroAlt: "Spielszene der 1. Mannschaft des SV Zweckel",
       officialUrl:
@@ -551,12 +551,12 @@ window.svzData = {
           detail: "17 Punkte",
         },
         {
-          label: "Torverhaeltnis",
+          label: "Torverhältnis",
           value: "35:72",
           detail: "Stand der abgerufenen Profildaten im April 2026",
         },
         {
-          label: "Heimspielstaette",
+          label: "Heimspielstätte",
           value: "Dorstener Strasse (Kunstrasen)",
           detail: "Dorstener Str. 43, 45966 Gladbeck",
         },
@@ -565,17 +565,17 @@ window.svzData = {
         {
           title: "Warum diese Seite wichtig ist",
           text:
-            "Die 1. Mannschaft ist auf Vereinswebsites fast immer der meistgeklickte Team-Bereich. Deshalb eignet sie sich ideal als Blaupause fuer Kader, Spielplan, News und Sponsorenlogik.",
+            "Die 1. Mannschaft ist auf Vereinswebsites fast immer der meistgeklickte Team-Bereich. Deshalb eignet sie sich ideal als Blaupause für Kader, Spielplan, News und Sponsorenlogik.",
         },
         {
-          title: "Was hier spaeter noch rein soll",
+          title: "Was hier später noch rein soll",
           text:
-            "Trainerteam, Kader, feste Ansprechpartner, Trainingszeiten, Downloads und ein eigener News-Feed werden im naechsten Ausbauschritt als wiederverwendbare Module ergaenzt.",
+            "Trainerteam, Kader, feste Ansprechpartner, Trainingszeiten, Downloads und ein eigener News-Feed werden im nächsten Ausbauschritt als wiederverwendbare Module ergänzt.",
         },
         {
           title: "Bereits verifizierte Daten",
           text:
-            "Tabelle, Wettbewerb, Torverhaeltnis, Heimspielstaette und kuenftige Gegner sind schon an das offizielle FUSSBALL.DE-Profil der Mannschaft gekoppelt.",
+            "Tabelle, Wettbewerb, Torverhältnis, Heimspielstätte und künftige Gegner sind schon an das offizielle FUSSBALL.DE-Profil der Mannschaft gekoppelt.",
         },
       ],
       nextMatches: [
@@ -584,28 +584,28 @@ window.svzData = {
         "3. Mai 2026, 15:00 Uhr | SV Zweckel - FC 96 Recklinghausen",
         "10. Mai 2026, 15:00 Uhr | FC Marokko Herne - SV Zweckel",
         "17. Mai 2026, 15:00 Uhr | SV Zweckel - Spfr. Bulmke",
-        "25. Mai 2026, 15:15 Uhr | VfB Boernig - SV Zweckel",
+        "25. Mai 2026, 15:15 Uhr | VfB Börnig - SV Zweckel",
         "31. Mai 2026, 15:00 Uhr | SV Zweckel - TuS Haltern",
       ],
       recentNews: [
         {
-          date: "30. Maerz 2026",
-          title: "VfB Kirchhellen ueberrennt Gladbecker",
+          date: "30. März 2026",
+          title: "VfB Kirchhellen überrennt Gladbecker",
         },
         {
-          date: "22. Maerz 2026",
+          date: "22. März 2026",
           title: "Horst-Emscher gewinnen gegen Gladbecker",
         },
         {
-          date: "16. Maerz 2026",
+          date: "16. März 2026",
           title: "Waldner ist dreimal zur Stelle",
         },
         {
-          date: "10. Maerz 2026",
+          date: "10. März 2026",
           title: "Gladbecker siegen in Herten",
         },
         {
-          date: "1. Maerz 2026",
+          date: "1. März 2026",
           title: "Joker Dworak sticht, SV Hochlar 28 siegt",
         },
       ],
@@ -618,26 +618,26 @@ window.svzData = {
       },
       coaching: [
         {
-          name: "Marc Schaefer",
+          name: "Marc Schäfer",
           role: "Cheftrainer",
           text:
             "Seit dem 25. September 2025 offiziell Cheftrainer der 1. Mannschaft. Zuvor war er viele Jahre beim BV Rentfort aktiv.",
         },
       ],
       training: {
-        title: "Oeffentlich dokumentierte Trainingsfenster",
+        title: "Öffentlich dokumentierte Trainingsfenster",
         note:
-          "Ein vollstaendiger woechentlicher Trainingsplan ist in den oeffentlich zugaenglichen Quellen nicht eindeutig veroeffentlicht. Dokumentiert sind aber mehrere Dienstagabend-Termine in der Uli-Simon-Arena.",
+          "Ein vollständiger wöchentlicher Trainingsplan ist in den öffentlich zugänglichen Quellen nicht eindeutig veröffentlicht. Dokumentiert sind aber mehrere Dienstagabend-Termine in der Uli-Simon-Arena.",
         items: [
           "Dienstag, 1. Juli 2025 | 19:15 Uhr | Start der Sommervorbereitung in der Uli-Simon-Arena",
-          "Freitag, 26. September 2025 | intensive Trainingseinheit vor dem ersten Spiel unter Marc Schaefer",
+          "Freitag, 26. September 2025 | intensive Trainingseinheit vor dem ersten Spiel unter Marc Schäfer",
           "Dienstag, 27. Januar 2026 | 19:30 Uhr | Wintervorbereitung gegen SV Dorsten-Hardt in der Uli-Simon-Arena",
         ],
       },
       squad: {
         title: "Sichtbarer Kaderstand 25/26",
         note:
-          "Die folgende oeffentlich sichtbare Kaderliste basiert auf dem Transfermarkt-Kaderstand fuer die Saison 2025/26. Offizielle Vereinsmeldungen nennen zusaetzlich weitere eingesetzte Spieler in Spielberichten.",
+          "Die folgende öffentlich sichtbare Kaderliste basiert auf dem Transfermarkt-Kaderstand für die Saison 2025/26. Offizielle Vereinsmeldungen nennen zusätzlich weitere eingesetzte Spieler in Spielberichten.",
         players: [
           { name: "Fabian Matschnigg", position: "Torwart" },
           { name: "Dominik Bicker", position: "Torwart" },
@@ -657,7 +657,7 @@ window.svzData = {
         ],
       },
       sourceNote:
-        "Verwendete Teamdaten aus dem offiziellen FUSSBALL.DE-Mannschaftsprofil sowie Trainer- und Kaderinfos aus oeffentlich sichtbaren Vereins- und Transfermarkt-Seiten, abgerufen im April 2026.",
+        "Verwendete Teamdaten aus dem offiziellen FUSSBALL.DE-Mannschaftsprofil sowie Trainer- und Kaderinfos aus öffentlich sichtbaren Vereins- und Transfermarkt-Seiten, abgerufen im April 2026.",
     },
     "zweite-mannschaft": {
       slug: "zweite-mannschaft",
@@ -665,9 +665,9 @@ window.svzData = {
       label: "Senioren | Kreisliga B",
       heroTitle: "Die 2. Mannschaft als zweiter Leistungsbereich mit eigener Story",
       intro:
-        "Mit derselben Seitenlogik wie bei der 1. Mannschaft wird auch die 2. Mannschaft als eigenstaendiger Bereich sichtbar. Das ist wichtig fuer Kaderpflege, Spielberichte und die Identitaet des gesamten Herrenbereichs.",
+        "Mit derselben Seitenlogik wie bei der 1. Mannschaft wird auch die 2. Mannschaft als eigenständiger Bereich sichtbar. Das ist wichtig für Kaderpflege, Spielberichte und die Identität des gesamten Herrenbereichs.",
       heroImage: "assets/blog_bild_1.webp",
-      heroAlt: "Stimmungsbild fuer die 2. Mannschaft des SV Zweckel",
+      heroAlt: "Stimmungsbild für die 2. Mannschaft des SV Zweckel",
       officialUrl:
         "https://www.fussball.de/mannschaft/sv-zweckel-ii-sv-zweckel-westfalen/-/saison/2526/team-id/011MIA5BAS000000VTVG0001VTR8C1K7",
       stats: [
@@ -682,12 +682,12 @@ window.svzData = {
           detail: "13 Punkte",
         },
         {
-          label: "Torverhaeltnis",
+          label: "Torverhältnis",
           value: "40:86",
           detail: "Stand der abgerufenen Profildaten im April 2026",
         },
         {
-          label: "Heimspielstaette",
+          label: "Heimspielstätte",
           value: "Dorstener Strasse (Kunstrasen)",
           detail: "Dorstener Str. 43, 45966 Gladbeck",
         },
@@ -696,53 +696,53 @@ window.svzData = {
         {
           title: "Eigene Relevanz statt Unterbau",
           text:
-            "Die 2. Mannschaft braucht auf der neuen Website keine Nebenrolle. Eigene News, eigene Spieltage und eine eigene Kontaktfuehrung machen die Seite deutlich wertiger.",
+            "Die 2. Mannschaft braucht auf der neuen Website keine Nebenrolle. Eigene News, eigene Spieltage und eine eigene Kontaktführung machen die Seite deutlich wertiger.",
         },
         {
-          title: "Starker Nutzen fuer Redaktion",
+          title: "Starker Nutzen für Redaktion",
           text:
-            "Das Teamprofil zeigt bereits im offiziellen Datensatz Spielberichte und Vorberichte. Genau diese Dynamik laesst sich spaeter direkt in ein CMS-Modul ueberfuehren.",
+            "Das Teamprofil zeigt bereits im offiziellen Datensatz Spielberichte und Vorberichte. Genau diese Dynamik lässt sich später direkt in ein CMS-Modul überführen.",
         },
         {
-          title: "Naechste inhaltliche Ausbaustufe",
+          title: "Nächste inhaltliche Ausbaustufe",
           text:
-            "Trainer, Ansprechpartner, Trainingszeiten und Kaderblock koennen in derselben Modulstruktur wie bei der 1. Mannschaft ergaenzt werden.",
+            "Trainer, Ansprechpartner, Trainingszeiten und Kaderblock können in derselben Modulstruktur wie bei der 1. Mannschaft ergänzt werden.",
         },
       ],
       nextMatches: [
         "12. April 2026, 15:15 Uhr | SV Zweckel II - SV GE-Hessler 06 III",
         "19. April 2026, 15:00 Uhr | FC Gladbeck - SV Zweckel II",
-        "26. April 2026, 13:00 Uhr | SV Zweckel II - BV Horst-Sued II",
+        "26. April 2026, 13:00 Uhr | SV Zweckel II - BV Horst-Süd II",
         "3. Mai 2026, 13:00 Uhr | YEG Hassel II - SV Zweckel II",
         "10. Mai 2026, 13:00 Uhr | SV Zweckel II - SC Hassel II",
       ],
       recentNews: [
         {
-          date: "25. Maerz 2026",
+          date: "25. März 2026",
           title: "SV Zweckel II will raus aus der Gefahrenzone",
         },
         {
-          date: "18. Maerz 2026",
+          date: "18. März 2026",
           title: "SV Zweckel II will weiter Boden gutmachen",
         },
         {
           date: "15. Dezember 2025",
-          title: "Umkaempftes Duell in Gladbeck: Sieg gegen Genclerbirligi",
+          title: "Umkämpftes Duell in Gladbeck: Sieg gegen Genclerbirligi",
         },
         {
           date: "17. November 2025",
-          title: "Triumph ueber SC Hassel II",
+          title: "Triumph über SC Hassel II",
         },
         {
           date: "20. Oktober 2025",
-          title: "Wichtiger Dreier fuer SV Zweckel II",
+          title: "Wichtiger Dreier für SV Zweckel II",
         },
       ],
       cta: {
         primaryLabel: "Offizielles Teamprofil auf FUSSBALL.DE",
         primaryUrl:
           "https://www.fussball.de/mannschaft/sv-zweckel-ii-sv-zweckel-westfalen/-/saison/2526/team-id/011MIA5BAS000000VTVG0001VTR8C1K7",
-        secondaryLabel: "Zur Mannschaftsuebersicht",
+        secondaryLabel: "Zur Mannschaftsübersicht",
         secondaryUrl: "mannschaften.html",
       },
       sourceNote:
@@ -754,9 +754,9 @@ window.svzData = {
       label: "Senioren | Kreisliga C",
       heroTitle: "Die 3. Mannschaft bekommt denselben professionellen Rahmen",
       intro:
-        "Auch die 3. Mannschaft wird auf der neuen Website nicht nur als Randnotiz behandelt. Mit eigener Teamseite entsteht Platz fuer Spieltage, Ansprechpartner und Mannschaftsidentitaet.",
+        "Auch die 3. Mannschaft wird auf der neuen Website nicht nur als Randnotiz behandelt. Mit eigener Teamseite entsteht Platz für Spieltage, Ansprechpartner und Mannschaftsidentität.",
       heroImage: "assets/sv_zweckel_banner.jpg",
-      heroAlt: "Bannerbild fuer die 3. Mannschaft des SV Zweckel",
+      heroAlt: "Bannerbild für die 3. Mannschaft des SV Zweckel",
       officialUrl:
         "https://www.fussball.de/mannschaft/sv-zweckel-iii-sv-zweckel-westfalen/-/saison/2526/team-id/02TAD0OP7G000000VS5489BSVV9JRPRB",
       stats: [
@@ -771,36 +771,36 @@ window.svzData = {
           detail: "9 Punkte",
         },
         {
-          label: "Torverhaeltnis",
+          label: "Torverhältnis",
           value: "37:138",
           detail: "Stand der abgerufenen Profildaten im April 2026",
         },
         {
-          label: "Heimspielstaette",
+          label: "Heimspielstätte",
           value: "Dorstener Strasse (Kunstrasen)",
           detail: "Dorstener Str. 43, 45966 Gladbeck",
         },
       ],
       summaryCards: [
         {
-          title: "Wertige Darstellung fuer alle Herren-Teams",
+          title: "Wertige Darstellung für alle Herren-Teams",
           text:
             "Gerade in einem lokal starken Verein macht die Breite des Herrenbereichs viel aus. Deshalb ist die 3. Mannschaft auf derselben visuellen Ebene angelegt wie die ersten beiden Teams.",
         },
         {
           title: "Offizielle Daten schon eingebunden",
           text:
-            "Wettbewerb, Tabellenplatz, Torverhaeltnis, Spielort und mehrere offizielle Vorberichte sind im Teamprofil bereits verfuegbar und koennen spaeter automatisiert gezogen werden.",
+            "Wettbewerb, Tabellenplatz, Torverhältnis, Spielort und mehrere offizielle Vorberichte sind im Teamprofil bereits verfügbar und können später automatisiert gezogen werden.",
         },
         {
           title: "Technische Wirkung",
           text:
-            "Mit dieser dritten Seite ist das Detailtemplate jetzt wirklich belastbar. Wir koennen darauf direkt Jugendseiten oder weitere Abteilungen aufsetzen.",
+            "Mit dieser dritten Seite ist das Detailtemplate jetzt wirklich belastbar. Wir können darauf direkt Jugendseiten oder weitere Abteilungen aufsetzen.",
         },
       ],
       nextMatches: [
         "12. April 2026, 13:00 Uhr | SV Zweckel III - Adler Ellinghorst 1961 II",
-        "19. April 2026, 15:00 Uhr | BV Horst-Sued - SV Zweckel III",
+        "19. April 2026, 15:00 Uhr | BV Horst-Süd - SV Zweckel III",
         "26. April 2026, 13:00 Uhr | SV Zweckel III - SV Hansa Buer Scholven 1919 e.V.",
         "3. Mai 2026, 13:00 Uhr | Viktoria Resse II - SV Zweckel III",
         "10. Mai 2026, 15:00 Uhr | SV Zweckel III - FC Horst 59 II",
@@ -808,14 +808,14 @@ window.svzData = {
       recentNews: [
         {
           date: "1. April 2026",
-          title: "Pflichtangelegenheit fuer VfB Kirchhellen 1920 III",
+          title: "Pflichtangelegenheit für VfB Kirchhellen 1920 III",
         },
         {
           date: "1. April 2026",
           title: "SpVg. Westfalia Buer II gut in Form",
         },
         {
-          date: "25. Maerz 2026",
+          date: "25. März 2026",
           title: "Bricht SV Zweckel III den Bann?",
         },
       ],
@@ -823,7 +823,7 @@ window.svzData = {
         primaryLabel: "Offizielles Teamprofil auf FUSSBALL.DE",
         primaryUrl:
           "https://www.fussball.de/mannschaft/sv-zweckel-iii-sv-zweckel-westfalen/-/saison/2526/team-id/02TAD0OP7G000000VS5489BSVV9JRPRB",
-        secondaryLabel: "Zur Mannschaftsuebersicht",
+        secondaryLabel: "Zur Mannschaftsübersicht",
         secondaryUrl: "mannschaften.html",
       },
       sourceNote:
@@ -833,14 +833,14 @@ window.svzData = {
   timelineItems: [
     {
       year: "1923",
-      text: "Gruendung als identitaetsstarker Verein mit schwarz-gruener Basis und tiefer lokaler Verankerung.",
+      text: "Gründung als identitätsstarker Verein mit schwarz-grüner Basis und tiefer lokaler Verankerung.",
     },
     {
       year: "Heute",
       text: "Die neue Website verbindet Tradition, Spieltag, Jugend und Vereinsservice in einer klaren Architektur.",
     },
     {
-      year: "Naechster Schritt",
+      year: "Nächster Schritt",
       text: "Migration der bestehenden Inhalte in strukturierte Seitentypen und News-Kategorien statt verstreuter Seitenlogik.",
     },
   ],
@@ -848,9 +848,9 @@ window.svzData = {
     "Ulrich Wloch - Vorsitzender",
     "Timon Reschke - Stellvertretender Vorsitzender",
     "Gregor Vollmer - Schatzmeister",
-    "Jakob Pleiss / Heinz Schluesener - Geschaeftsfuehrer",
+    "Jakob Pleiss / Heinz Schlüsener - Geschäftsführer",
     "Jens Bremershemke / Oliver Wujek - Jugendleitung",
-    "Rene Schweikl - Jugendgeschaeftsfuehrer",
-    "Max Scharmacher - Oeffentlichkeitsarbeit",
+    "Rene Schweikl - Jugendgeschäftsführer",
+    "Max Scharmacher - Öffentlichkeitsarbeit",
   ],
 };

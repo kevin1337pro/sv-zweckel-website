@@ -214,15 +214,21 @@ function bindSearch() {
   });
 }
 
-function bindFormDemo() {
+function bindContactForm() {
   contactForm?.addEventListener("submit", (event) => {
+    const name = contactForm.querySelector("#name")?.value.trim() || "";
+    const email = contactForm.querySelector("#email")?.value.trim() || "";
+    const message = contactForm.querySelector("#message")?.value.trim() || "";
+
+    const subject = encodeURIComponent(
+      `Anfrage über die Website${name ? ` von ${name}` : ""}`
+    );
+    const body = encodeURIComponent(
+      `Name: ${name}\nE-Mail: ${email}\n\nNachricht:\n${message}`
+    );
+
     event.preventDefault();
-    const button = contactForm.querySelector("button");
-    const originalText = button.textContent;
-    button.textContent = "Demo gespeichert";
-    setTimeout(() => {
-      button.textContent = originalText;
-    }, 1800);
+    window.location.href = `mailto:info@svzweckel.de?subject=${subject}&body=${body}`;
   });
 }
 
@@ -257,10 +263,6 @@ function bindLiveMatchbar() {
   syncLiveMatchbarToViewport();
 
   liveMatchbarToggle.addEventListener("click", () => {
-    if (!mobileLiveMatchbar.matches) {
-      return;
-    }
-
     const collapsed = liveMatchbar.classList.contains("is-collapsed");
     setLiveMatchbarState(!collapsed);
   });
@@ -277,5 +279,5 @@ renderSocialLinks();
 renderOfficialMeta();
 bindNavigation();
 bindSearch();
-bindFormDemo();
+bindContactForm();
 bindLiveMatchbar();

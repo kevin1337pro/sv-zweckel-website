@@ -99,7 +99,7 @@ function renderArchive() {
   }
 
   const filteredNews = getFilteredNews();
-  archiveCount.textContent = `${filteredNews.length} Beitraege`;
+  archiveCount.textContent = `${filteredNews.length} Beiträge`;
 
   archiveGrid.innerHTML = filteredNews
     .map(
