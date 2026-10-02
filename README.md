@@ -1,113 +1,94 @@
 # SV Zweckel Website
 
-Diese erste Version ist bewusst als statische Basis aufgebaut. So koennen wir Design, Inhaltsstruktur und Nutzerfuehrung sauber ausarbeiten, bevor wir ein CMS oder dynamische Datenquellen anschliessen.
+Statische, responsive Website in Schwarz-Gruen. Keine Framework- oder Build-Abhaengigkeit fuer den Produktivbetrieb.
 
-## Projektdateien
+Live: https://kevin1337pro.github.io/sv-zweckel-website/
 
-- `index.html`: komplette Startseite mit allen Hauptsektionen
-- `news.html`: eigenstaendige News-Seite mit Archiv, Kategorien und Suchfilter
-- `mannschaften.html`: Mannschafts-Hub mit offiziellen FUSSBALL.DE-Links
-- `jugend.html`: Jugendportal mit Ansprechpartnern und Probetraining
-- `mitgliedschaft.html`: eigene Seite fuer Beitritt und Einstiegswege
-- `service.html`: Serviceebene fuer Fans, Downloads, Sponsoring und Kontakt
-- `erste-mannschaft.html`: erste echte Team-Detailseite auf Basis offizieller Teamdaten
-- `zweite-mannschaft.html`: Detailseite der 2. Mannschaft
-- `dritte-mannschaft.html`: Detailseite der 3. Mannschaft
-- `styles.css`: Designsystem, Layout, Komponenten und Responsiveness
-- `data.js`: gemeinsame Inhaltsdaten fuer Startseite und Unterseiten
-- `script.js`: Startseitenlogik, Teamfilter, mobile Navigation und Demo-Interaktionen
-- `news.js`: Logik fuer Featured-News, Filterchips und News-Archiv
-- `jugend.js`: Logik fuer Jugend-Hub und Jugendteams
-- `mitgliedschaft.js`: Logik fuer Mitgliedschaftsseite und Einstiegswege
-- `service.js`: Logik fuer Serviceebene, Sponsoring und Kontakt
-- `teams.js`: Logik fuer Mannschafts-Hub, Vereinsdaten und Social-Kanaele
-- `team-detail.js`: wiederverwendbare Teamdetail-Logik fuer Mannschaftsseiten
-- `.github/workflows/deploy-pages.yml`: automatische Bereitstellung ueber GitHub Pages
-- `assets/`: Logo, Headerbild, Banner und Blogbild
-- `SV Zweckel Website Plan.md`: fachliche Grundlage fuer Struktur und Inhalte
+## Projektstruktur
 
-## Schritt-fuer-Schritt durch das Projekt
+- Zehn HTML-Seiten: Startseite, News, Mannschaften, drei Seniorenteams, Jugend, Mitgliedschaft, Service und Fanshop.
+- `styles.css`: gemeinsames Designsystem und responsive Layouts.
+- `data.js`: redaktionelle News, ein datiertes Ergebnis, Produktbilder und Kaderarchiv.
+- `script.js`: gemeinsame Navigation, Newsfilter, Produktansichten, mobile Ergebnisleiste, Mailentwurf und Laufschrift.
+- `assets/`: lokale Vereinsbilder, Produktfotos und Logo.
+- `assets/fonts/`: lokal gehostete Barlow Condensed und Manrope, jeweils mit OFL-Lizenz.
+- `tests/`: statische Pruefungen und Browser-Regressionstests.
+- `.github/workflows/deploy-pages.yml`: gepruefte Veroeffentlichung nach GitHub Pages.
 
-### 1. Informationsarchitektur festziehen
+## Lokal Ansehen
 
-Aus dem Plan wurden diese Kernbereiche direkt in die Website uebernommen:
+Im Projektordner:
 
-- Aktuelles
-- Mannschaften
-- Jugend
-- Verein
-- Mitgliedschaft
-- Fans & Service
-- Kontakt
-
-Ziel dabei: erst die Nutzerfuehrung festziehen, dann Unterseiten und CMS-Felder daraus ableiten.
-
-### 2. Startseite als Leitseite bauen
-
-Die Startseite wurde absichtlich als stark kuratierte Portal-Seite angelegt:
-
-- Hero mit Vereinsbild und zentralen CTAs
-- Matchcenter als Modul fuer kuenftige Spieltagsdaten
-- News-Raster fuer redaktionelle Inhalte plus eigenstaendige News-Seite
-- Team-Uebersicht als Vorlage fuer spaetere Landingpages
-- Mannschafts-Hub mit offiziellen Wettbewerbslinks von FUSSBALL.DE
-- erste echte Teamdetailseite fuer die 1. Mannschaft
-- weitere Detailseiten fuer die 2. und 3. Mannschaft
-- Jugend-Landingpage
-- eigene Seiten fuer Mitgliedschaft und Fans & Service
-- Jugend-Featureblock
-- Historie und Ansprechpartner
-- Mitgliedschaft und Kontakt
-
-### 3. Inhalte in wiederverwendbare Bausteine ueberfuehren
-
-In `data.js` liegen die Inhalte als gemeinsame Datenbasis statt fest im HTML. Das ist wichtig, weil wir spaeter:
-
-- News aus einem CMS ziehen koennen
-- Mannschaftsdaten aus einem Teammodell laden koennen
-- Historie, Ansprechpartner und Schnellzugriffe zentral pflegen koennen
-- mehrere Seiten mit denselben Inhalten fuettern koennen
-- Social-Kanaele und externe Vereinsprofile zentral aktualisieren koennen
-- weitere Mannschaftsseiten aus demselben Detailtemplate ableiten koennen
-
-### 4. Designsystem aufbauen
-
-`styles.css` definiert:
-
-- Farbvariablen fuer die schwarz-gruene Markenwelt
-- wiederverwendbare Karten, Buttons und Panels
-- responsive Layouts fuer Desktop und Mobil
-- mobile Navigation
-
-Damit koennen wir spaeter leicht weitere Seiten im selben Stil aufbauen.
-
-### 5. Naechste sinnvolle Ausbaustufen
-
-Die logische Reihenfolge ab hier:
-
-1. Jugend-Landingpage als eigene Unterseite aufbauen
-2. weitere Detailseiten fuer Walking Football und Jugendteams anlegen
-3. echtes Formularsystem anbinden
-4. Downloadbereich fuer Mitgliedsantrag und Satzung mit echten PDFs integrieren
-5. Spielplan- und Tabellen-Einbindung vorbereiten
-6. danach CMS-Entscheidung treffen, z. B. WordPress, Sanity, Strapi oder statisch mit Netlify CMS
-
-## Lokale Vorschau
-
-Im Projektordner kannst du eine einfache Vorschau mit einem lokalen Server starten, zum Beispiel:
-
-```bash
+```sh
 python3 -m http.server 8000
 ```
 
-Anschliessend oeffnest du `http://localhost:8000`.
+Dann http://localhost:8000 aufrufen. Die Website funktioniert ohne npm oder Buildschritt.
 
-## Empfehlung fuer den naechsten Durchgang
+## Testen
 
-Wenn wir sauber weitermachen wollen, bauen wir als naechstes nicht wahllos mehr Startseiten-Elemente, sondern:
+Node.js ab Version 20:
 
-1. Walking Football und Jugendteams als weitere Detailseiten
-2. echte Formulare und Downloads einbauen
-3. spaeter einzelne News-Detailseiten oder CMS-Detailansichten
+```sh
+npm ci
+npm test
+npx playwright install chromium
+npm run test:browser
+```
 
-Das ist der Punkt, an dem aus einer starken Startseite ein richtiges Webprojekt wird.
+Die Browsertests starten einen eigenen lokalen Server, pruefen alle zehn Seiten bei
+320, 390, 600, 768, 1024, 1100, 1101 und 1440 Pixeln und speichern Screenshots in
+`test-results/`. Geprueft werden Ueberlaeufe, Bild-/Schriftladen, Navigation mit
+Tastatur, Chevron, Bildschirmwechsel, Footer-Abstand, Produktrueckseiten,
+Newsfilter, Mailentwurf, Kaderarchiv, reduzierte Bewegung und JavaScript-Fallback.
+
+Optionale Umgebungsvariablen:
+
+- `CHROMIUM_PATH`: Pfad zu einer bereits installierten Chromium-Datei.
+- `BASE_URL`: statt lokalem Server eine bereits bereitgestellte Website testen.
+- `SCREENSHOT_DIR`: alternatives Screenshot-Verzeichnis.
+- `PLAYWRIGHT_MODULE`: alternatives Playwright-Modul, etwa aus einer Arbeitsumgebung.
+
+## Inhalte Pflegen
+
+1. News in `data.js` unter `news` bearbeiten. Jede Meldung braucht ein echtes Datum,
+   einen Quellenlink sowie eine zutreffende Bildbeschreibung.
+2. Das Ergebnis unter `match` nur nach Quellenpruefung aendern. Es ist ein
+   redaktioneller Endstand, **kein automatisch aktualisierter Live-Ticker**.
+3. Unter `products` gehoeren Vorder- und Rueckseite zusammen. Der Shop ist eine
+   Vorschau; Bestellung, Preise und Bestand liegen ausschliesslich im verlinkten
+   JAKO-Teamshop.
+4. Texte in den jeweiligen HTML-Seiten bearbeiten. Kopf-/Fussbereiche sind
+   statisches HTML und muessen bei strukturellen Aenderungen konsistent gehalten
+   werden.
+5. Tests ausfuehren, geaenderte Projektdateien committen und nach `main` pushen.
+   GitHub Actions prueft die lokalen Links und publiziert nur HTML, CSS, die beiden
+   aktiven Skripte und oeffentliche Assets.
+
+## Quellen Und Grenzen
+
+Redaktionell geprueft am 02.10.2026:
+
+- Legendenspiel: https://www.svzweckel.de/?p=19532
+- Ergebnis Grafenwald 4:1 SV Zweckel vom 27.09.2026: https://www.svzweckel.de/?p=19529
+- Schalke-Camp: https://www.svzweckel.de/?p=19482
+- Erste Mannschaft / Saisonmeldungen: https://www.svzweckel.de/?cat=2
+- Trainernennung Marc Schaefer vom 04.09.2026: https://www.svzweckel.de/?p=19415
+- Reserve in Kreisliga C1: https://www.svzweckel.de/?p=19308
+- Jugend und JSG: https://www.svzweckel.de/?page_id=19
+- Beitrittsunterlagen: https://www.svzweckel.de/?page_id=224
+- Historie: https://www.svzweckel.de/?page_id=199
+- JAKO-Teamshop: https://team.jako.com/de-de/team/sv_zweckel_23_e_v_/
+
+Das Kaderarchiv 2025/26 wurde aus dem bestehenden Projekt uebernommen und ist
+ausdruecklich kein aktueller Kader. Verbindliche Trainingszeiten, vollstaendige
+Trainerteams und der aktuelle Meldestatus der dritten Mannschaft muessen vom
+Verein bestaetigt werden.
+
+Das Kontaktformular erstellt nur einen Mailentwurf. Es versendet und speichert
+keine Nachricht. Die Bilder und Fonts werden lokal geladen, Social Media und
+Karten sind normale externe Links ohne Tracking-Einbettung.
+
+Die verlinkten Vereins-Rechtstexte ersetzen keine Freigabe der neuen Website:
+Vor dem offiziellen Vereinsbetrieb muessen Betreiberangaben, Datenschutz,
+Bildrechte und aktuelle Teaminformationen vom Verantwortlichen geprueft werden.

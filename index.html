@@ -1,607 +1,741 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SV Zweckel 23 e. V. | Moderne Vereinswebsite</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#061c15" />
+    <title>Schwarz. Grün. Zweckel. | SV Zweckel 23 e. V.</title>
     <meta
       name="description"
-      content="Moderne Konzept-Website für den SV Zweckel 23 e. V. mit Matchcenter, News, Mannschaften, Jugend, Historie und Kontakt."
+      content="Fußball, Vereinsleben und Gemeinschaft in Gladbeck: Entdecke den SV Zweckel 23 e. V., seine Mannschaften, News und den JAKO-Fanshop."
+    />
+    <meta
+      property="og:title"
+      content="Schwarz. Grün. Zweckel. | SV Zweckel 23 e. V."
+    />
+    <meta
+      property="og:description"
+      content="Fußball, Vereinsleben und Gemeinschaft in Gladbeck: Entdecke den SV Zweckel 23 e. V., seine Mannschaften, News und den JAKO-Fanshop."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta
+      property="og:image"
+      content="https://kevin1337pro.github.io/sv-zweckel-website/assets/header_bild_1.webp"
+    />
+    <link rel="icon" href="assets/svzweckel_logo.jpg" type="image/jpeg" />
+    <link
+      rel="preload"
+      href="assets/fonts/barlow-condensed-800-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
     <link rel="preload" href="assets/header_bild_1.webp" as="image" />
-    <link rel="preload" href="assets/svzweckel_logo.jpg" as="image" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261002" />
+    <script src="data.js?v=20261002" defer></script>
+    <script src="script.js?v=20261002" defer></script>
   </head>
   <body class="home-page">
-    <div class="site-shell">
-      <header class="site-header" id="top">
-        <div class="brand-lockup">
-          <a class="brand-link" href="#top" aria-label="Zur Startseite">
-            <img
-              class="brand-logo"
-              src="assets/svzweckel_logo.jpg"
-              alt="Logo des SV Zweckel"
-            />
-            <div>
-              <p class="eyebrow">Seit 1923</p>
-              <p class="brand-title">SV Zweckel 23 e. V.</p>
-            </div>
-          </a>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+    <div class="utility-bar" id="top">
+      <div class="container utility-inner">
+        <span>Gladbeck-Zweckel · Fußball mit Heimatgefühl</span>
+        <div class="utility-links">
+          <a
+            href="https://www.fussball.de/verein/sv-zweckel-westfalen/-/id/00ES8GN8OC00001OVV0AG08LVUPGND5I"
+            target="_blank"
+            rel="noopener noreferrer"
+            >FUSSBALL.DE</a
+          ><a href="service.html#kontakt">Kontakt</a
+          ><a
+            href="https://www.instagram.com/svzweckel23/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
         </div>
-
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand-link"
+          href="index.html"
+          aria-label="SV Zweckel, zur Startseite"
+        >
+          <img
+            class="brand-logo"
+            src="assets/svzweckel_logo.jpg"
+            alt=""
+            width="56"
+            height="56"
+          />
+          <div>
+            <p class="brand-title">SV ZWECKEL <span>23</span></p>
+            <p class="brand-subtitle">Schwarz. Grün. Seit 1923.</p>
+          </div>
+        </a>
         <button
           class="nav-toggle"
           type="button"
           aria-expanded="false"
           aria-controls="primary-nav"
+          aria-label="Menü öffnen"
         >
-          Menü
+          <span>Menü</span><span class="menu-lines" aria-hidden="true"></span>
         </button>
-
         <nav class="primary-nav" id="primary-nav" aria-label="Hauptnavigation">
           <a href="news.html">Aktuelles</a>
           <a href="mannschaften.html">Mannschaften</a>
           <a href="jugend.html">Jugend</a>
-          <a href="#verein">Verein</a>
-          <a href="mitgliedschaft.html">Mitgliedschaft</a>
+          <a href="index.html#verein">Verein</a>
           <a href="fanshop.html">Fanshop</a>
           <a href="service.html">Fans &amp; Service</a>
-          <a href="service.html#kontakt" class="button button-secondary">Kontakt</a>
+          <a href="mitgliedschaft.html" class="nav-join">Mitglied werden</a>
         </nav>
-      </header>
-
-      <main>
-        <section class="hero-section">
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/header_bild_1.webp"
+          alt=""
+          width="1536"
+          height="1024"
+          fetchpriority="high"
+        />
+        <div class="container hero-content">
           <div class="hero-copy">
-            <p class="eyebrow">Schwarz. Grün. Gladbeck.</p>
-            <h1>Die neue digitale Heimat für den SV Zweckel.</h1>
-            <p class="hero-text">
-              Spielpläne, News, Mannschaften und Vereinsleben &ndash; alles
-              an einem Ort. Vom ersten Probetraining bis zum Heimspiel
-              findest du hier alles, was den SV Zweckel ausmacht.
+            <p class="eyebrow">Dein Verein. Dein Zuhause.</p>
+            <h1 id="hero-title">
+              <span>Schwarz.</span><span class="green">Grün.</span
+              ><span class="outline">Zweckel.</span>
+            </h1>
+            <p class="hero-intro">
+              Für den Fußball. Für unsere Nachbarn. Für die Momente, die
+              bleiben. Willkommen beim SV Zweckel 23 e. V.
             </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="mitgliedschaft.html"
-                >Mitglied werden</a
+            <div class="actions">
+              <a class="button button-primary" href="mannschaften.html"
+                >Unsere Mannschaften
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" /></svg></a
+              ><a class="button button-outline" href="mitgliedschaft.html"
+                >Teil des SVZ werden</a
               >
-              <a class="button button-ghost" href="mannschaften.html"
-                >Teams entdecken</a
-              >
-              <a
-                class="button button-ghost"
-                id="official-club-link"
-                href="#"
-                target="_blank"
-                rel="noreferrer"
-                >Offiziell auf FUSSBALL.DE</a
-              >
-            </div>
-            <ul class="hero-pills" aria-label="Vereinsmerkmale">
-              <li>Vom Bambini bis zur 1. Mannschaft</li>
-              <li>Über 100 Jahre Tradition</li>
-              <li>Mitten in Gladbeck</li>
-            </ul>
-          </div>
-
-          <div class="hero-stage">
-            <img
-              src="assets/header_bild_1.webp"
-              alt="Stimmungsbild des SV Zweckel"
-            />
-          </div>
-        </section>
-
-        <section class="ticker-strip" aria-label="Vereins-Highlights">
-          <div class="ticker-card">
-            <span class="ticker-label">Verein</span>
-            <strong>Über 100 Jahre Fußball, Jugendarbeit und Vereinsleben in Gladbeck</strong>
-          </div>
-          <div class="ticker-card">
-            <span class="ticker-label">Heimspielstätte</span>
-            <strong>Uli-Simon-Arena · Dorstener Straße 43 · 45966 Gladbeck</strong>
-          </div>
-          <div class="ticker-card banner-card">
-            <img
-              src="assets/sv_zweckel_banner.jpg"
-              alt="Banner des SV Zweckel"
-            />
-          </div>
-        </section>
-
-        <section class="stats-strip" id="official-club-meta"></section>
-
-        <section class="section-grid" id="aktuelles">
-          <div class="section-heading">
-            <p class="eyebrow">Startseite</p>
-            <h2>Spieltag, News und Mannschaften auf einen Blick</h2>
-            <p>
-              Hier findest du das Wichtigste rund um den SV Zweckel:
-              den nächsten Spieltag, aktuelle Meldungen aus dem Verein und
-              den schnellen Sprung zu deiner Mannschaft.
-            </p>
-          </div>
-
-          <div class="matchcenter-panel">
-            <div class="panel-head">
-              <div>
-                <p class="card-kicker">Matchcenter</p>
-                <h3>Der nächste Spieltag im Überblick</h3>
-              </div>
-              <span class="live-chip">Daten aus FUSSBALL.DE</span>
-            </div>
-
-            <div class="matchcenter-grid">
-              <article class="fixture-card accent-green">
-                <p class="fixture-label">Nächstes Spiel</p>
-                <h4>1. Mannschaft</h4>
-                <p>Spieltermin folgt</p>
-                <p>Uli-Simon-Arena, Gladbeck</p>
-              </article>
-
-              <article class="fixture-card accent-dark">
-                <p class="fixture-label">Letztes Ergebnis</p>
-                <h4>Wird aktualisiert</h4>
-                <p>Aktuelle Spielberichte findest du in der News-Übersicht.</p>
-              </article>
-
-              <article class="fixture-card accent-outline">
-                <p class="fixture-label">Direktzugriff</p>
-                <h4>Spielplan &amp; Tabelle</h4>
-                <p>Komplette Spielpläne und Tabellen findest du auf FUSSBALL.DE.</p>
-              </article>
             </div>
           </div>
-        </section>
-
-        <section class="content-split">
-          <div class="news-column">
-            <div class="section-heading compact">
-              <p class="eyebrow">Aktuelles</p>
-              <h2>Top-News mit klaren Kategorien</h2>
-              <p>
-                Die Startseite zeigt nur die wichtigsten Meldungen. Das volle
-                Archiv liegt auf der eigenständigen News-Seite.
-              </p>
-              <a class="button button-ghost" href="news.html">Alle News ansehen</a>
+          <div class="hero-aside">
+            <span class="small-label" style="color: #c0d2c5"
+              >Hier gehören wir hin</span
+            >
+            <p class="stadium-name">Heimspiel ist<br />ein Gefühl.</p>
+            <div class="hero-location">
+              <p>Uli-Simon-Arena<br />Dorstener Straße 43 · Gladbeck</p>
             </div>
-            <div class="news-grid" id="news-grid"></div>
           </div>
-
-          <aside class="quicklinks-column" id="service">
-            <div class="info-panel">
-              <p class="card-kicker">Schnellzugriffe</p>
-              <h3>Die wichtigsten Aktionen ohne Umwege</h3>
-              <div class="quicklinks" id="quicklinks"></div>
-            </div>
-
-            <div class="info-panel search-panel">
-              <p class="card-kicker">Inhalte finden</p>
-              <label class="search-label" for="site-search"
-                >Teams und Schwerpunkte filtern</label
-              >
-              <input
-                id="site-search"
-                class="search-input"
-                type="search"
-                placeholder="z. B. Jugend, Herren, Sponsoring"
-              />
-              <p class="search-hint">
-                Filter direkt über alle Mannschaften und Schwerpunkte.
-              </p>
-            </div>
-          </aside>
-        </section>
-
-        <section class="section-grid" id="mannschaften">
-          <div class="section-heading">
-            <p class="eyebrow">Mannschaften</p>
-            <h2>Vom Bambini bis zur 1. Mannschaft</h2>
-            <p>
-              Jede Mannschaft mit eigenem Profil &ndash; mit
-              Ansprechpartnern, Trainingszeiten, Spielplan und Tabellen.
-              Such dir dein Team aus und bleib auf dem Laufenden.
-            </p>
-          </div>
-          <div class="team-grid" id="team-grid"></div>
-        </section>
-
-        <section class="featured-story" id="jugend">
-          <div class="featured-media">
-            <img
-              src="assets/blog_bild_1.webp"
-              alt="Symbolbild für Vereinsleben und Jugend"
-            />
-          </div>
-          <div class="featured-copy">
-            <p class="eyebrow">Jugend im Fokus</p>
-            <h2>Probetraining, Jugendteams und ein klarer Weg in den Verein</h2>
-            <p>
-              Vom ersten Bambini-Training bis zur A-Jugend: Beim SV Zweckel
-              werden Talente begleitet, gefordert und gefördert. Eltern,
-              Kinder und Jugendliche finden hier alle Infos zum Einstieg.
-            </p>
-            <ul class="feature-list">
-              <li>A- bis G-Junioren mit eigenen Trainern</li>
-              <li>Trainingszeiten, Ansprechpartner und Kontakt</li>
-              <li>Probetraining jederzeit möglich</li>
-            </ul>
-            <a class="button button-primary" href="jugend.html"
-              >Probetraining anfragen</a
+        </div>
+        <div class="hero-bottom">
+          <div class="container">
+            <span>Mehr als 100 Jahre schwarz-grüne Geschichte.</span
+            ><a href="#aktuelles"
+              >Den Verein entdecken <span aria-hidden="true">↓</span></a
             >
           </div>
-        </section>
-
-        <section class="section-grid" id="verein">
+        </div>
+      </section>
+      <section class="club-ribbon" aria-label="Unser Verein in drei Worten">
+        <div class="container ribbon-inner">
+          <div class="ribbon-item">
+            <strong>1923</strong
+            ><span>In Gladbeck gegründet.<br />In Zweckel zu Hause.</span>
+          </div>
+          <div class="ribbon-item">
+            <strong>Ein Team.</strong
+            ><span>Auf dem Platz.<br />Und daneben.</span>
+          </div>
+          <div class="ribbon-item">
+            <strong>Unser SVZ.</strong
+            ><span>Tradition im Herzen.<br />Zukunft im Blick.</span>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="aktuelles">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Verein</p>
-            <h2>Tradition, Vorstand und Vereinsleben</h2>
-            <p>
-              Über 100 Jahre Geschichte, ein engagierter Vorstand und ein
-              Vereinsleben, das vom Mitmachen lebt. Hier findest du
-              Historie und Ansprechpartner auf einen Blick.
-            </p>
-          </div>
-
-          <div class="history-board">
-            <div class="timeline-panel">
-              <p class="card-kicker">Historie</p>
-              <div class="timeline" id="timeline"></div>
-            </div>
-
-            <div class="board-panel">
-              <p class="card-kicker">Ansprechpartner</p>
-              <div class="board-grid" id="board-grid"></div>
-            </div>
-          </div>
-        </section>
-
-        <section class="membership-section" id="mitgliedschaft">
-          <div class="membership-copy">
-            <p class="eyebrow">Mitgliedschaft</p>
-            <h2>Werde Teil des SV Zweckel</h2>
-            <p>
-              Ob als aktives Mitglied, Förderer oder Sponsor &ndash; beim
-              SV Zweckel ist für jeden Platz, der den Verein und den
-              Gladbecker Fußball stärken möchte.
-            </p>
-          </div>
-
-          <div class="membership-cards">
-            <article class="membership-card">
-              <h3>Mitglied werden</h3>
-              <p>
-                Antrag, Beiträge und alle Infos zum Einstieg findest du
-                gebündelt auf der Mitgliedschaftsseite.
-              </p>
-              <a href="mitgliedschaft.html">Mitgliedschaft anfragen</a>
-            </article>
-
-            <article class="membership-card">
-              <h3>Sponsoring</h3>
-              <p>
-                Lokale Sichtbarkeit, Trikotwerbung und Bandenflächen &ndash;
-                wir besprechen gemeinsam, was zu deinem Unternehmen passt.
-              </p>
-              <a href="service.html#kontakt">Sponsoring besprechen</a>
-            </article>
-          </div>
-        </section>
-
-        <section class="section-grid contact-grid" id="kontakt">
-          <div class="section-heading">
-            <p class="eyebrow">Kontakt</p>
-            <h2>Die wichtigsten Vereinsdaten direkt erreichbar</h2>
-          </div>
-
-          <div class="contact-card">
-            <h3>SV Zweckel 23 e. V.</h3>
-            <p>Dorstener Strasse 43<br />45966 Gladbeck</p>
-            <p>Telefon: <a href="tel:+49204351743">0 20 43 / 5 17 43</a></p>
-            <p>
-              E-Mail:
-              <a href="mailto:info@svzweckel.de">info@svzweckel.de</a>
-            </p>
-          </div>
-
-          <form
-            class="contact-form"
-            id="contact-form"
-            action="mailto:info@svzweckel.de"
-            method="post"
-            enctype="text/plain"
-          >
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Dein Name" required />
-            </div>
-            <div class="form-row">
-              <label for="email">E-Mail</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="dein.name@example.com"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="message">Nachricht</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Worum geht es?"
-                required
-              ></textarea>
-            </div>
-            <button class="button button-primary" type="submit">
-              Anfrage absenden
-            </button>
-            <p class="form-note">
-              Beim Absenden öffnet sich dein E-Mail-Programm mit einer
-              vorbefüllten Nachricht an
-              <a href="mailto:info@svzweckel.de">info@svzweckel.de</a>.
-            </p>
-          </form>
-        </section>
-
-        <section class="section-grid">
-          <div class="section-heading compact">
-            <p class="eyebrow">Vereinskanäle</p>
-            <h2>Social und Messenger direkt erreichbar</h2>
-            <p>
-              Instagram, TikTok und WhatsApp ergänzen die Website als schnelle
-              Vereinskanäle für Fans, Spieler und Eltern.
-            </p>
-          </div>
-          <div class="social-grid" id="social-grid"></div>
-        </section>
-
-        <section class="outline-marquee" aria-label="Vereinsname als Lauftext">
-          <div class="outline-marquee-track">
-            <span>SV ZWECKEL 23 E.V.</span>
-            <span>SV ZWECKEL 23 E.V.</span>
-            <span>SV ZWECKEL 23 E.V.</span>
-            <span>SV ZWECKEL 23 E.V.</span>
-          </div>
-        </section>
-
-        <section class="shop-preview-section" id="shop">
-          <div class="section-heading">
-            <p class="eyebrow">Fanshop</p>
-            <h2>Trikots, Teamwear und Fan-Artikel</h2>
-            <p>
-              Als offizieller JAKO-Partner stattet der SV Zweckel seine
-              Mannschaften und Fans aus. Auf der Fanshop-Seite findest
-              du die aktuelle Kollektion und kannst Artikel direkt anfragen.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="fanshop.html">Zum Fanshop</a>
-              <a class="button button-ghost" href="service.html#kontakt">Artikel anfragen</a>
-            </div>
-          </div>
-
-          <div class="shop-preview-grid">
-            <article class="shop-card shop-card-featured">
-              <img
-                src="assets/JAKO_Trikot_Glory_kurzarm_front.jpg"
-                alt="JAKO Glory Trikot kurzarm Vorderseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Matchday</p>
-                <h3>Glory Trikot kurzarm</h3>
-                <p>Das aktuelle Heimtrikot in Schwarz und Grün.</p>
-              </div>
-            </article>
-
-            <article class="shop-card">
-              <img
-                src="assets/JAKO_Trikot_Glory_kurzarm_back.jpg"
-                alt="JAKO Glory Trikot kurzarm Rückseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Rückseite</p>
-                <h3>Glory Back</h3>
-                <p>Mit Platz für Namen und Rückennummer auf Anfrage.</p>
-              </div>
-            </article>
-
-            <article class="shop-card">
-              <img
-                src="assets/JAKO_Trikot_Vintage_kurzarm_front.jpg"
-                alt="JAKO Vintage Trikot kurzarm Vorderseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Retro</p>
-                <h3>Vintage Front</h3>
-                <p>Klassischer Look für Fans, die den traditionellen Stil lieben.</p>
-              </div>
-            </article>
-
-            <article class="shop-card">
-              <img
-                src="assets/JAKO_Trikot_Vintage_kurzarm_back.jpg"
-                alt="JAKO Vintage Trikot kurzarm Rückseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Retro Back</p>
-                <h3>Vintage Back</h3>
-                <p>Nostalgische Optik in modernem Schnitt.</p>
-              </div>
-            </article>
-
-            <article class="shop-card">
-              <img
-                src="assets/JAKO_Kapuzenjacke_Iconic.jpg"
-                alt="JAKO Kapuzenjacke Iconic Vorderseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Teamwear</p>
-                <h3>Iconic Hoodie</h3>
-                <p>Bequem und alltagstauglich &ndash; für Spieler, Trainer und Fans.</p>
-              </div>
-            </article>
-
-            <article class="shop-card">
-              <img
-                src="assets/JAKO_Kapuzenjacke_Iconic_back.jpg"
-                alt="JAKO Kapuzenjacke Iconic Rückseite"
-              />
-              <div class="shop-card-body">
-                <p class="card-kicker">Rückenansicht</p>
-                <h3>Iconic Hoodie Back</h3>
-                <p>Veredelung mit Namen oder Vereinslogo auf Anfrage.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="sponsor-region" aria-label="Sponsorenregion">
-          <div class="sponsor-panel">
-            <div class="sponsor-copy">
-              <p class="eyebrow">Ausrüster und Partner</p>
-              <h2>Offizieller Ausrüster: JAKO</h2>
-              <p>
-                Der SV Zweckel wird von JAKO ausgestattet &ndash; vom
-                Trikot über Trainingsanzüge bis zur Teamwear. Du möchtest
-                Partner werden? Sprich uns gerne an.
-              </p>
-            </div>
-
-            <div class="sponsor-badge">
-              <span class="sponsor-label">Offizieller Ausrüster</span>
-              <strong>JAKO</strong>
-              <p>Trikots, Teamwear und Merchandise für alle Mannschaften des SV Zweckel.</p>
-              <a class="button button-primary" href="service.html#kontakt"
-                >Sponsoring anfragen</a
-              >
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="footer-brand">
-          <a class="footer-brand-link" href="#top" aria-label="Zur Startseite">
-            <img
-              class="footer-logo"
-              src="assets/svzweckel_logo.jpg"
-              alt="Logo des SV Zweckel"
-            />
             <div>
-              <p class="eyebrow">SV Zweckel 23 e. V.</p>
-              <p>
-                Schwarz-grünes Vereinsleben aus Gladbeck &ndash; seit 1923.
-              </p>
+              <p class="eyebrow">01 / Rund um den SVZ</p>
+              <h2>Was uns bewegt.</h2>
             </div>
-          </a>
-          <div class="footer-socials" aria-label="Social Media Links">
+            <a class="text-link" href="news.html"
+              >Alle Meldungen
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+          </div>
+          <div class="news-grid" data-news-grid data-limit="3"></div>
+          <noscript
+            ><p>
+              Die Vereinsmeldungen findest du direkt auf
+              <a href="https://www.svzweckel.de/">svzweckel.de</a>.
+            </p></noscript
+          >
+          <p class="source-note">
+            Ausgewählte Vereinsmeldungen · Stand 02.10.2026 · Originalberichte
+            auf
             <a
-              class="social-icon-link"
+              href="https://www.svzweckel.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >svzweckel.de</a
+            >
+          </p>
+        </div>
+      </section>
+      <section
+        class="team-feature"
+        id="mannschaften"
+        aria-labelledby="team-feature-title"
+      >
+        <div class="team-feature-media">
+          <img
+            src="assets/team_sitzkreis_1_.webp"
+            alt="Zweckeler Spieler sitzen gemeinsam am Spielfeldrand"
+            width="1000"
+            height="845"
+            loading="lazy"
+          /><span class="image-caption">Vereinsarchiv</span>
+        </div>
+        <div class="team-feature-copy">
+          <p class="eyebrow">02 / Zusammen auf dem Platz</p>
+          <h2 id="team-feature-title">Viele Köpfe.<br />Ein Herzschlag.</h2>
+          <p>
+            Der Fußball bringt uns zusammen. Lerne unsere Teams kennen und finde
+            deinen Platz in der schwarz-grünen Gemeinschaft.
+          </p>
+          <div class="actions">
+            <a class="button button-primary" href="erste-mannschaft.html"
+              >Zur 1. Mannschaft
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+          </div>
+          <div class="team-links">
+            <a href="zweite-mannschaft.html"
+              >2. Mannschaft <span>Gemeinsam für Zweckel</span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg></a
+            ><a href="jugend.html"
+              >Unsere Jugend <span>Die Zukunft spielt mit</span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg></a
+            ><a href="mannschaften.html"
+              >Alle Mannschaften <span>Das ist der SVZ</span
+              ><svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container community-grid">
+          <article class="community-card" id="jugend">
+            <span class="community-number" aria-hidden="true">01</span>
+            <p class="eyebrow">Kleine Kicker. Große Träume.</p>
+            <h2>Dein erstes<br />Heimspiel.</h2>
+            <p>
+              Du hast Lust auf Fußball? Entdecke unsere Jugend und vereinbare
+              ein Probetraining. Wir freuen uns auf neue Mitspielerinnen und
+              Mitspieler.
+            </p>
+            <div class="actions">
+              <a class="button button-dark" href="jugend.html"
+                >Zur Jugend
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" /></svg
+              ></a>
+            </div>
+          </article>
+          <article class="community-card join-card" id="mitgliedschaft">
+            <span class="community-number" aria-hidden="true">23</span>
+            <p class="eyebrow">Nicht nur dabei. Mittendrin.</p>
+            <h2>Hier ist noch<br />Platz für dich.</h2>
+            <p>
+              Als Spieler, als Fan oder im Ehrenamt: Ein Verein lebt von den
+              Menschen, die mitmachen. Werde ein Teil davon.
+            </p>
+            <div class="actions">
+              <a class="button button-dark" href="mitgliedschaft.html"
+                >Mitglied werden
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M5 12h14M13 6l6 6-6 6" /></svg
+              ></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section heritage" id="verein">
+        <div class="container">
+          <div class="heritage-head">
+            <div>
+              <p class="eyebrow">03 / Verwurzelt in Zweckel</p>
+              <h2>Kein Verein<br />wie jeder andere.</h2>
+            </div>
+            <p>
+              Seit 1923 tragen wir Schwarz und Grün. Unser Zuhause ist der
+              Sportplatz an der Dorstener Straße. Was uns ausmacht, sind nicht
+              nur die 90 Minuten, sondern die Menschen davor, danach und
+              mittendrin.
+            </p>
+          </div>
+          <div class="heritage-grid">
+            <article>
+              <strong>1923</strong>
+              <p>
+                Die Gründung des SV Zweckel. Schwarz und Grün werden unsere
+                Vereinsfarben.
+              </p>
+            </article>
+            <article>
+              <strong>2023</strong>
+              <p>
+                Ein Jahrhundert Fußball, Ehrenamt und Gemeinschaft in unserem
+                Stadtteil.
+              </p>
+            </article>
+            <article>
+              <strong>Morgen.</strong>
+              <p>
+                Wir schreiben die Geschichte weiter. Zusammen mit dir und der
+                nächsten Generation.
+              </p>
+            </article>
+          </div>
+          <a
+            class="text-link"
+            href="https://www.svzweckel.de/?page_id=199"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Unsere Vereinsgeschichte
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M13 6l6 6-6 6" /></svg
+          ></a>
+        </div>
+      </section>
+      <section class="section shop-section" id="shop">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">04 / Trag deine Farben</p>
+              <h2>Zweckel steht dir.</h2>
+            </div>
+            <a class="text-link" href="fanshop.html"
+              >Zum Fanshop
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+          </div>
+          <div class="product-grid" data-products></div>
+          <noscript
+            ><a
+              class="button button-dark"
+              href="https://team.jako.com/de-de/team/sv_zweckel_23_e_v_/"
+              >Zum JAKO-Teamshop</a
+            ></noscript
+          >
+          <p class="source-note">
+            Produktauswahl als Vorschau. Verfügbare Modelle, Größen und Preise
+            findest du im offiziellen JAKO-Teamshop.
+          </p>
+        </div>
+      </section>
+      <section class="section social-section" aria-labelledby="social-title">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Auch neben dem Platz</p>
+              <h2 id="social-title">Immer nah dran.</h2>
+            </div>
+            <p>Dein Verein. In deinem Feed.</p>
+          </div>
+          <div class="social-grid">
+            <a
+              class="social-card"
               href="https://www.instagram.com/svzweckel23/"
               target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram des SV Zweckel"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                <circle cx="12" cy="12" r="4"></circle>
-                <circle cx="17.5" cy="6.5" r="1.2"></circle>
+              rel="noopener noreferrer"
+              ><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="1"
+                  fill="currentColor"
+                  stroke="none"
+                />
               </svg>
-            </a>
+              <div><strong>Instagram</strong><span>@svzweckel23</span></div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
             <a
-              class="social-icon-link"
+              class="social-card"
               href="https://www.tiktok.com/@sv_zweckel_23/"
               target="_blank"
-              rel="noreferrer"
-              aria-label="TikTok des SV Zweckel"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
+              rel="noopener noreferrer"
+              ><svg
+                class="social-icon fill-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path
                   d="M14.5 4c.6 1.8 1.9 3 3.7 3.3v2.7a6.3 6.3 0 0 1-3.7-1.1v5.3a5.2 5.2 0 1 1-5.2-5.2c.3 0 .7 0 1 .1v2.8a2.6 2.6 0 1 0 1.6 2.4V4h2.6Z"
-                ></path>
+                />
               </svg>
-            </a>
+              <div><strong>TikTok</strong><span>@sv_zweckel_23</span></div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
             <a
-              class="social-icon-link"
+              class="social-card"
               href="https://whatsapp.com/channel/0029VbCXFjVKbYML54DEDv0Q"
               target="_blank"
-              rel="noreferrer"
-              aria-label="WhatsApp Kanal des SV Zweckel"
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
+              rel="noopener noreferrer"
+              ><svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path
-                  d="M12 4a8 8 0 0 0-6.9 12l-1 4 4.1-1A8 8 0 1 0 12 4Zm4.4 11.3c-.2.6-1.2 1.2-1.7 1.2s-1 .2-3.1-.6c-2.6-1-4.3-3.7-4.4-3.8s-1-1.3-1-2.4  .6-1.7.9-1.9.6-.3.8-.3h.6c.2 0 .4 0 .5.4l.7 1.7c.1.3.1.4 0 .6l-.3.5c-.1.1-.2.3 0 .5.2.4.8 1.2 1.7 1.9 1.2 1 2.1 1.3 2.4 1.5.2.1.4.1.5-.1l.8-.9c.2-.2.3-.2.5-.1l1.7.8c.3.1.4.2.5.4.1.2.1.9-.1 1.5Z"
-                ></path>
+                  d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"
+                />
+                <path
+                  d="M9 7.5c-2 2 2 6.5 4.5 7.5 1 .4 2-.1 2.5-1l-2-1.4-1 1c-1.2-.6-2.7-2.1-3.3-3.3l1-1Z"
+                  fill="currentColor"
+                  stroke="none"
+                />
               </svg>
+              <div>
+                <strong>WhatsApp</strong><span>Vereinskanal abonnieren</span>
+              </div>
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M13 6l6 6-6 6" /></svg
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="outline-marquee" aria-label="SV Zweckel 23 e. V.">
+        <div class="outline-marquee-track" aria-hidden="true">
+          <div class="marquee-group">
+            <span>SV ZWECKEL 23 E.V.</span><b>+</b
+            ><span>SV ZWECKEL 23 E.V.</span><b>+</b>
+          </div>
+          <div class="marquee-group">
+            <span>SV ZWECKEL 23 E.V.</span><b>+</b
+            ><span>SV ZWECKEL 23 E.V.</span><b>+</b>
+          </div>
+        </div>
+        <button
+          class="marquee-control"
+          data-marquee-toggle
+          type="button"
+          aria-pressed="false"
+          hidden
+        >
+          Laufschrift pausieren
+        </button>
+      </section>
+    </main>
+    <section class="partners" aria-labelledby="partners-title">
+      <div class="container partners-inner">
+        <div>
+          <p class="eyebrow">Gemeinsam stärker</p>
+          <h2 id="partners-title">Unser Ausrüster.</h2>
+        </div>
+        <a
+          class="partner-logo"
+          href="https://team.jako.com/de-de/team/sv_zweckel_23_e_v_/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="JAKO: zum offiziellen SV-Zweckel-Teamshop"
+          ><img
+            src="assets/Jako_logo.svg.png"
+            alt="JAKO"
+            width="2052"
+            height="584"
+            loading="lazy"
+        /></a>
+        <a class="text-link" href="service.html#sponsoring"
+          >Partner des SVZ werden
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14M13 6l6 6-6 6" /></svg
+        ></a>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a
+              class="brand-link"
+              href="index.html"
+              aria-label="SV Zweckel, zur Startseite"
+            >
+              <img
+                class="brand-logo"
+                src="assets/svzweckel_logo.jpg"
+                alt=""
+                width="56"
+                height="56"
+              />
+              <div>
+                <p class="brand-title">SV ZWECKEL <span>23</span></p>
+                <p class="brand-subtitle">Schwarz. Grün. Seit 1923.</p>
+              </div>
             </a>
+            <p>
+              Ein Stadtteil. Ein Verein. Ein Zuhause.<br />Fußball und
+              Zusammenhalt in Gladbeck-Zweckel.
+            </p>
+            <div class="footer-socials" aria-label="Social Media">
+              <a
+                class="social-icon-link"
+                href="https://www.instagram.com/svzweckel23/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram des SV Zweckel"
+                ><svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17.5"
+                    cy="6.5"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg></a
+              ><a
+                class="social-icon-link"
+                href="https://www.tiktok.com/@sv_zweckel_23/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok des SV Zweckel"
+                ><svg
+                  class="social-icon fill-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M14.5 4c.6 1.8 1.9 3 3.7 3.3v2.7a6.3 6.3 0 0 1-3.7-1.1v5.3a5.2 5.2 0 1 1-5.2-5.2c.3 0 .7 0 1 .1v2.8a2.6 2.6 0 1 0 1.6 2.4V4h2.6Z"
+                  /></svg></a
+              ><a
+                class="social-icon-link"
+                href="https://whatsapp.com/channel/0029VbCXFjVKbYML54DEDv0Q"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp des SV Zweckel"
+                ><svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z"
+                  />
+                  <path
+                    d="M9 7.5c-2 2 2 6.5 4.5 7.5 1 .4 2-.1 2.5-1l-2-1.4-1 1c-1.2-.6-2.7-2.1-3.3-3.3l1-1Z"
+                    fill="currentColor"
+                    stroke="none"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-title">Dein Verein</p>
+            <nav class="footer-links" aria-label="Vereinsbereiche">
+              <a href="news.html">Aktuelles</a
+              ><a href="mannschaften.html">Mannschaften</a
+              ><a href="jugend.html">Jugend &amp; Probetraining</a
+              ><a href="mitgliedschaft.html">Mitglied werden</a
+              ><a href="fanshop.html">Fanshop</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer-title">Auf einen Besuch</p>
+            <div class="footer-links">
+              <p>Dorstener Straße 43<br />45966 Gladbeck</p>
+              <a href="mailto:info@svzweckel.de">info@svzweckel.de</a
+              ><a href="tel:+49204351743">02043 / 51743</a
+              ><a href="service.html#anfahrt">Anfahrt &amp; Kontakt</a>
+            </div>
           </div>
         </div>
-        <div class="footer-links">
-          <a href="#top">Nach oben</a>
-          <a href="news.html">Aktuelles</a>
-          <a href="mannschaften.html">Mannschaften</a>
-          <a href="jugend.html">Jugend</a>
-          <a href="#verein">Verein</a>
-          <a href="mitgliedschaft.html">Mitgliedschaft</a>
-          <a href="fanshop.html">Fanshop</a>
-          <a href="service.html">Fans &amp; Service</a>
-          <a href="service.html#kontakt">Kontakt</a>
+        <div class="footer-bottom">
+          <span>SV Zweckel 23 e. V. · Website-Vorschau 2026</span>
+          <div class="footer-legal">
+            <a
+              href="https://www.svzweckel.de/?page_id=18971"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Vereins-Impressum</a
+            >
+            <a href="service.html#website-hinweise">Website &amp; Datenschutz</a
+            ><a href="#top">Nach oben</a>
+          </div>
         </div>
-      </footer>
-    </div>
-
-    <aside class="live-matchbar" aria-label="Vorschau Live-Leiste">
+      </div>
+    </footer>
+    <aside
+      class="live-matchbar is-collapsed"
+      aria-label="Spieltagsleiste mit redaktionell gepflegtem Ergebnis"
+      hidden
+    >
       <div class="live-matchbar-inner">
-        <span class="live-demo-badge" aria-hidden="true">Vorschau</span>
+        <span class="matchbar-heading">Spieltag</span>
         <div class="live-matchbar-primary">
-          <div class="live-matchbar-score">
-            <div class="live-club live-club-home">
-              <p class="live-club-label">Heim</p>
-              <strong>SVZ</strong>
-            </div>
-
-            <div class="live-score-block">
-              <span class="live-status">Demo · 84'</span>
-              <strong>2:1</strong>
-            </div>
-
-            <div class="live-club live-club-away">
-              <p class="live-club-label">Gast</p>
-              <strong>GEG</strong>
-            </div>
-          </div>
-
+          <div class="live-matchbar-score"></div>
           <button
             class="live-matchbar-toggle"
             type="button"
-            aria-expanded="true"
+            aria-expanded="false"
             aria-controls="live-matchbar-extra"
-            aria-label="Live-Leiste ein- oder ausklappen"
+            aria-label="Spieltagsdetails ausklappen"
+            hidden
           >
-            <span class="live-matchbar-toggle-icon" aria-hidden="true"></span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              aria-hidden="true"
+            >
+              <path d="m6 14 6-6 6 6" />
+            </svg>
           </button>
         </div>
-
-        <div class="live-matchbar-extra" id="live-matchbar-extra">
-        <div class="live-matchbar-events">
-          <span class="live-event-chip">Konzeptvorschau – Live-Daten folgen</span>
-          <span class="live-event-chip">12' 0:1</span>
-          <span class="live-event-chip">35' 1:1 Cicek</span>
-          <span class="live-event-chip">78' 2:1 Waldner</span>
-        </div>
-
-        <div class="live-matchbar-links">
-          <a href="mannschaften.html">Spieltag</a>
-          <a href="news.html">Spielberichte</a>
-          <a href="erste-mannschaft.html">1. Mannschaft</a>
-          <a href="mannschaften.html">Tabelle</a>
-        </div>
+        <div class="live-matchbar-extra" id="live-matchbar-extra" hidden>
+          <div class="live-matchbar-events"></div>
+          <nav class="live-matchbar-links" aria-label="Spieltagslinks">
+            <a
+              href="https://www.svzweckel.de/?p=19529"
+              data-match-report
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spielbericht</a
+            >
+            <a
+              href="https://www.fussball.de/verein/sv-zweckel-westfalen/-/id/00ES8GN8OC00001OVV0AG08LVUPGND5I"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Spielplan &amp; Tabelle</a
+            >
+          </nav>
         </div>
       </div>
     </aside>
-
-    <script src="data.js"></script>
-    <script src="script.js"></script>
   </body>
 </html>

@@ -25,13 +25,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check public pages
+        run: npm test
+
+      - name: Prepare public files only
+        run: |
+          mkdir -p _site/assets/fonts
+          cp ./*.html styles.css data.js script.js .nojekyll _site/
+          cp assets/*.jpg assets/*.png assets/*.webp _site/assets/
+          cp assets/fonts/*.woff2 assets/fonts/*OFL.txt _site/assets/fonts/
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment

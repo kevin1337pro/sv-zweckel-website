@@ -1,0 +1,16 @@
+{
+  "name": "sv-zweckel-website",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Static SV Zweckel website with responsive browser checks.",
+  "scripts": {
+    "test": "node --test tests/static.test.mjs",
+    "test:browser": "node tests/browser.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
