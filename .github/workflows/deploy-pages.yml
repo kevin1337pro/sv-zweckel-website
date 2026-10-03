@@ -30,7 +30,10 @@ jobs:
         with:
           node-version: 22
 
-      - name: Check public pages
+      - name: Install pinned build dependencies
+        run: npm ci
+
+      - name: Build 3D assets and check public pages
         run: npm test
 
       - name: Prepare public files only
@@ -39,6 +42,7 @@ jobs:
           cp ./*.html styles.css data.js script.js .nojekyll _site/
           cp assets/*.jpg assets/*.png assets/*.webp _site/assets/
           cp assets/fonts/*.woff2 assets/fonts/*OFL.txt _site/assets/fonts/
+          cp -R assets/football _site/assets/football
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

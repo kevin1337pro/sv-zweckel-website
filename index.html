@@ -35,9 +35,10 @@
       crossorigin
     />
     <link rel="preload" href="assets/header_bild_1.webp" as="image" />
-    <link rel="stylesheet" href="styles.css?v=20261002" />
+    <link rel="stylesheet" href="styles.css?v=20261003" />
     <script src="data.js?v=20261002" defer></script>
     <script src="script.js?v=20261002" defer></script>
+    <script type="module" src="assets/football/football.js?v=20261003"></script>
   </head>
   <body class="home-page">
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -137,19 +138,133 @@
               >
             </div>
           </div>
-          <div class="hero-aside">
-            <span class="small-label" style="color: #c0d2c5"
-              >Hier gehören wir hin</span
-            >
-            <p class="stadium-name">Heimspiel ist<br />ein Gefühl.</p>
-            <div class="hero-location">
-              <p>Uli-Simon-Arena<br />Dorstener Straße 43 · Gladbeck</p>
+          <div
+            class="football-experience"
+            data-football
+            data-state="poster"
+            role="region"
+            aria-label="Den Verein am 3D-Fußball entdecken"
+          >
+            <div class="football-topline">
+              <span><i aria-hidden="true"></i> Ein Ball. Ein Verein.</span>
+              <span>SVZ / 1923</span>
             </div>
+            <div class="football-viewport" data-football-viewport>
+              <span class="football-watermark" aria-hidden="true">1923</span>
+              <div class="football-orbit" aria-hidden="true"></div>
+              <img
+                class="football-poster"
+                src="assets/football/football-poster.svg"
+                width="600"
+                height="530"
+                alt="Schwarz-weißer Fußball mit klassischem Fünfeck-Muster"
+              />
+              <button
+                class="football-load"
+                type="button"
+                data-football-start
+                hidden
+              >
+                3D-Fußball laden
+              </button>
+            </div>
+            <div class="football-toolbar">
+              <p data-football-hint>Ein Ball. Ein Verein. Seit 1923.</p>
+              <div
+                class="football-controls"
+                data-football-controls
+                role="group"
+                aria-label="3D-Fußball steuern"
+                hidden
+              >
+                <button
+                  type="button"
+                  data-football-previous
+                  aria-label="Vorherigen Vereinsbereich zeigen"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="m14 6-6 6 6 6" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  data-football-motion
+                  aria-label="Drehung pausieren"
+                  aria-pressed="false"
+                >
+                  <svg
+                    class="football-pause-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M7 5h3v14H7zm7 0h3v14h-3z" />
+                  </svg>
+                  <svg
+                    class="football-play-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="m8 5 11 7-11 7z" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  data-football-next
+                  aria-label="Nächsten Vereinsbereich zeigen"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true"
+                  >
+                    <path d="m10 6 6 6-6 6" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="football-selection">
+              <span class="football-number" data-football-number>01 / 06</span>
+              <div>
+                <p class="football-title" data-football-title>
+                  Unsere Mannschaften
+                </p>
+                <p class="football-description" data-football-description>
+                  Zusammen auf dem Platz.
+                </p>
+              </div>
+              <a href="mannschaften.html" data-football-link
+                ><span>Teams entdecken</span
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg
+              ></a>
+            </div>
+            <p
+              class="sr-only"
+              data-football-status
+              aria-live="polite"
+              aria-atomic="true"
+            ></p>
           </div>
         </div>
         <div class="hero-bottom">
           <div class="container">
-            <span>Mehr als 100 Jahre schwarz-grüne Geschichte.</span
+            <span>Uli-Simon-Arena · Gladbeck · Seit 1923 zu Hause.</span
             ><a href="#aktuelles"
               >Den Verein entdecken <span aria-hidden="true">↓</span></a
             >

@@ -1,6 +1,8 @@
 # SV Zweckel Website
 
-Statische, responsive Website in Schwarz-Gruen. Keine Framework- oder Build-Abhaengigkeit fuer den Produktivbetrieb.
+Statische, responsive Website in Schwarz-Gruen mit interaktivem 3D-Fussball.
+Kein Framework und kein Backend im Produktivbetrieb; der kleine Buildschritt
+buendelt Three.js lokal fuer die Startseite.
 
 Live: https://kevin1337pro.github.io/sv-zweckel-website/
 
@@ -10,6 +12,9 @@ Live: https://kevin1337pro.github.io/sv-zweckel-website/
 - `styles.css`: gemeinsames Designsystem und responsive Layouts.
 - `data.js`: redaktionelle News, ein datiertes Ergebnis, Produktbilder und Kaderarchiv.
 - `script.js`: gemeinsame Navigation, Newsfilter, Produktansichten, mobile Ergebnisleiste, Mailentwurf und Laufschrift.
+- `src/football/`: progressive 3D-Einbindung, Geometrie aus 32 gekruemmten Panels und Bedienung.
+- `scripts/build.mjs`: baut lokale ES-Module, ein SVG-Ersatzbild aus derselben Geometrie und die Three.js-Lizenz nach `assets/football/`.
+- `scripts/serve.mjs`: lokaler Vorschau-Server, nur auf `127.0.0.1` erreichbar.
 - `assets/`: lokale Vereinsbilder, Produktfotos und Logo.
 - `assets/fonts/`: lokal gehostete Barlow Condensed und Manrope, jeweils mit OFL-Lizenz.
 - `tests/`: statische Pruefungen und Browser-Regressionstests.
@@ -17,13 +22,30 @@ Live: https://kevin1337pro.github.io/sv-zweckel-website/
 
 ## Lokal Ansehen
 
-Im Projektordner:
+Im Projektordner mit Node.js ab Version 20:
 
 ```sh
-python3 -m http.server 8000
+npm ci
+npm run dev
 ```
 
-Dann http://localhost:8000 aufrufen. Die Website funktioniert ohne npm oder Buildschritt.
+Dann http://127.0.0.1:8000 aufrufen. `npm run dev` baut die 3D-Dateien vor dem
+Serverstart. Nach Aenderungen an `src/football/` erneut `npm run build` ausfuehren.
+HTML und CSS koennen direkt aktualisiert werden. `PORT` aendert den Vorschau-Port.
+
+Der Ideenordner `3D_Fussball_Website_Idee` diente als gestalterische Vorlage.
+Die bestehende Website wurde nicht auf Next.js migriert. Die neue Geometrie ist
+prozedural, braucht keinen externen Modelldownload und nutzt das Vereinswappen
+aus `assets/svzweckel_logo.jpg` als lokale Textur.
+
+## Den Ball Bedienen
+
+- Ziehen dreht den Ball; auf Touchscreens bleibt vertikales Scrollen und Zoomen moeglich.
+- Schwarze Panels waehlen einen von sechs Vereinsbereichen. Der Textlink darunter oeffnet die passende Unterseite.
+- Die Pfeiltasten-Buttons waehlen dieselben Bereiche auch ohne Ziehen; alle Buttons sind per Tastatur erreichbar.
+- Die Pause-Taste stoppt bzw. startet die automatische Drehung. Bei reduzierter Bewegung startet der Ball still.
+- Ausserhalb des Bildschirms und in inaktiven Browser-Tabs wird nicht weiter gerendert.
+- Ohne JavaScript oder WebGL bleibt das SVG-Ersatzbild mit einem normalen Mannschaftslink sichtbar. Bei Datensparmodus wird 3D erst auf Klick geladen.
 
 ## Testen
 
@@ -34,6 +56,7 @@ npm ci
 npm test
 npx playwright install chromium
 npm run test:browser
+npm run test:football
 ```
 
 Die Browsertests starten einen eigenen lokalen Server, pruefen alle zehn Seiten bei
@@ -41,6 +64,9 @@ Die Browsertests starten einen eigenen lokalen Server, pruefen alle zehn Seiten 
 `test-results/`. Geprueft werden Ueberlaeufe, Bild-/Schriftladen, Navigation mit
 Tastatur, Chevron, Bildschirmwechsel, Footer-Abstand, Produktrueckseiten,
 Newsfilter, Mailentwurf, Kaderarchiv, reduzierte Bewegung und JavaScript-Fallback.
+Die zusaetzlichen 3D-Tests pruefen die 32 Flaechen, echte WebGL-Zeichenaufrufe,
+Ziehen, Panel-Auswahl, sechs Zielseiten, Touch-Scrollen, Pause, Sichtbarkeit,
+Datensparmodus, WebGL-Ausfall und Tastaturbedienung.
 
 Optionale Umgebungsvariablen:
 
@@ -62,8 +88,10 @@ Optionale Umgebungsvariablen:
    statisches HTML und muessen bei strukturellen Aenderungen konsistent gehalten
    werden.
 5. Tests ausfuehren, geaenderte Projektdateien committen und nach `main` pushen.
-   GitHub Actions prueft die lokalen Links und publiziert nur HTML, CSS, die beiden
-   aktiven Skripte und oeffentliche Assets.
+   GitHub Actions installiert die festgeschriebenen Abhaengigkeiten, baut und
+   prueft das Projekt und publiziert nur HTML, CSS, aktive Skripte und
+   oeffentliche Assets. `node_modules`, Quellcode und private Referenzordner
+   werden nicht veroeffentlicht. Die erzeugten 3D-Dateien sind in Git ignoriert.
 
 ## Quellen Und Grenzen
 
